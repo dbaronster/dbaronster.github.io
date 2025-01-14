@@ -1,0 +1,35 @@
+.person {
+		display: block;  
+		border: solid thin red;
+		background: #eeeeee;
+		margin-right: 1em;
+		margin-bottom: 1em;
+		float: left;
+		width: 200px;
+		height: 120px;
+		font-size: small;}
+.name 		     		{display: block; color: red; margin-top: 1em; 
+							margin-left: 1em; margin-bottom: 4px; }
+.street	 			{display: block; margin-left: 2em}
+.street:before 			{content: "Street: "; font-weight: bold}
+.city 					{display: inline; margin-left: 2em }
+.city:before 			{content: "City: "; font-weight: bold }
+.state 				{display: inline; }
+.state:before 			{content: ",  "; }
+.country 				{display: block; margin-left: 2em }
+.country:before 			{content: "Country: "; font-weight: bold }
+.zip 					{display: inline; margin-left: 4px;}
+.phone 					{display: block; margin-left: 2em }
+.phone[where ~= "w"]:before		{content: "Phone (work): "; font-weight: bold }
+.phone:before		{content: "Phone: "; font-weight: bold }
+.phone[where ~= "home"]:before			{content: "Phone (home): "; font-weight: bold }
+.phone[where ~= "mobile"]:before		{content: "Phone (cell): "; font-weight: bold }
+.fax 					{display: block; margin-left: 2em }
+.fax:before				{content: "Fax: "; font-weight: bold }
+.email 				{display: block; margin-left: 2em }
+.email:before			{content: "Email: "; font-weight: bold }
+.picture 				{display: none; }
+.notes 				{display: block; margin-left: 2em }
+.notes:before			{content: "Notes: "; font-style: italic }
+
+

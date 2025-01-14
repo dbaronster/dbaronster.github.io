@@ -1,0 +1,88 @@
+<!--
+/* <![CDATA[ */	
+
+/* music-specific styles, colors, etc */
+
+body {
+background-color:#eee;
+}
+
+#top_nav {
+background-color: transparent;
+}
+
+#header {
+background: url(/img/mu-header.jpg) top center;
+}
+
+#outer{ 
+border-right: solid 40px #253300;
+} 
+
+#rightbox {
+background-color: #253300;
+}
+
+#subfooter {
+color: #fff;
+background: url(/img/mu_bottom_bg.gif) no-repeat top left;
+background-color: #253300;
+} 
+
+a {
+color:#894;
+text-decoration:none;
+}
+
+a:hover {
+color:#999;
+text-decoration:none;
+}
+
+#menu li a {
+margin:0;
+padding:0;
+color: #894;
+font-weight: bold;
+}
+
+#menu li a:hover {
+margin:0;
+padding:0;
+color: #999;
+font-weight: bold;
+}
+
+#menu li.activeli {
+}
+
+#menu li a.active {
+color: #253300;
+text-decoration:none;
+}
+
+#menu li a.active2 {
+color: #253300;
+text-decoration:none;
+}
+
+#menu h2, #menu h1 {
+color:#253300;
+}
+
+#centercolumn h1, #rightcolumn h1 {
+color:#253300;
+}
+
+#centercolumn h2, #rightcolumn h2 {
+color:#253300;
+}
+
+#sponsorcolumn h2, #sponsorcolumn h1 {
+color:#253300;
+}
+
+
+
+ /* ]]> */	
+-->

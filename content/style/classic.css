@@ -1,0 +1,103 @@
+th {
+	font-size: larger;
+	font-weight: bold;
+	color: #000000;
+	background: #cccccc; }
+}
+
+.bodyTile {
+	background-color: #003366; 
+}
+.bodyTile ul {
+	border: 1px #222222; 
+}
+.bodyTile ul li {
+	color: green;
+}
+.bodyTile ul li a:hover {
+	color: #33ff33;
+}
+.bodyTile ul li li {
+	color: red;
+}
+
+.listhead {
+	font-size: 10pt;
+	font-size: smaller;
+	font-weight: bold;
+	color: #000000;
+	background: #cccccc; 
+}
+
+.phonelist {
+}
+
+div.break {
+	clear: all;
+}
+
+div.pane {
+	margin-top: 1em;
+	padding-bottom: 0.5em;
+	border: 1px solid #003366;
+	clear: both;
+	width: 500px;
+	height: 100%;
+}
+div.pane div.title {
+	border: 1px solid #003366;
+	background-color: #336699;
+	vertical-align: middle;
+	padding: 2px;
+	padding-left: 1em;
+	margin-bottom: 0.25em;
+	color: yellow;
+}
+
+div.tabs {
+	float: left;
+	border: 1px solid black;
+	padding: 0.25em;
+	margin-right: 1em;
+}
+div.tabs input.selected {
+	color: #ff9933;
+	background-color: #003366;
+}
+
+div.buttons {
+	border: 1px single black;
+	padding: 0.25 em;
+	margin-right: 1em;
+}
+
+div.row {
+	clear: both;
+	font-size: smaller;
+	padding-top: 4px;
+	width: 500px;
+	border-top: 0px solid red;
+	border-bottom: 0px solid black;
+}
+
+div.row span {
+	float: left;
+	width: 20%;
+	text-align: right;
+}
+
+div.row input[type="text"] {
+	width: 70%; /*325px;*/
+	margin-right: 20px;
+	margin-left: 1em;
+	text-align: left;
+}
+
+/*
+div.row span.label {
+float: left;
+width: 100px;
+text-align: right;
+}
+*/
+

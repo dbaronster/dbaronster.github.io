@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+<!-- ======================================== Form Bean Definitions -->
+
+    <form-beans>
+
+        <form-bean
+            name="playerForm"
+            type="org.apache.struts.action.DynaActionForm">
+            <!--form-property name="metrics"	type="java.util.ArrayList"/-->
+            <form-property name="criterion"	type="java.lang.String"/>
+            <form-property name="value"		type="java.lang.String"/>
+            <form-property name="action"	type="java.lang.String"/>
+	    </form-bean>
+
+    </form-beans>
+
+<!-- =================================== Action Mapping Definitions -->
+
+    <action-mappings>
+
+        <action
+            path="/recruit"
+            type="com.midas.gridiron.action.RecruitAction"
+            name="playerForm"
+            scope="request"
+            validate="false">
+            <forward name="intro" path="/recruit.jsp"/>
+            <forward name="recruit" path="/criterion.jsp"/>
+            <forward name="pick" path="/criterion.jsp?action=pick"/>
+            <forward name="view" path="/print.jsp"/>
+            <forward name="set" path="/criterion.jsp?action=set"/>
+            <forward name="error" path="/criterion.jsp?action=pick"/>
+            <forward name="exit" path="/down.htm"/>
+        </action>
+
+    </action-mappings>
+
+
+<!-- ================================ Message Resources Definitions -->
+
+	<message-resources parameter="ApplicationResources" null="false"/>
+	<message-resources parameter="com.midas.gridiron.application" null="false"/>
+
+<!-- ======================================= Plug Ins Configuration -->
+
+</struts-config>
+

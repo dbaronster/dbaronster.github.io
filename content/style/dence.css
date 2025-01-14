@@ -1,0 +1,27 @@
+.edit	{display:inline; }
+.person 		     		{display: block; font-size: small;}
+.name 		     		{display: inline; color: red; margin-top: 1em; margin-left: 1em;}
+.address	 			{display: none; }
+.street	 			{display: inline; font-size: small;}
+.street:before 			{content: " | "; }
+.city 				{display: inline;}
+.city:before 			{content: ",  "; font-weight: bold }
+.state 				{display: inline; }
+.state:before 			{content: ",  "; font-weight: bold }
+.country 			{display: inline; }
+.country:before 			{content: "Country: "; font-weight: bold }
+.zip 				{display: inline; }
+.phone 				{display: inline; }
+.phone:before 			{content: " "; font-weight: bold}
+.phone[where ~= "wk"]:before	{content: "w: "; font-weight: bold }
+.phone[where ~= "w"]:before	{content: "w: "; font-weight: bold }
+.phone[where ~= "h"]:before	{content: "h: "; font-weight: bold }
+.phone[where ~= "cel"]:before	{content: "c: "; font-weight: bold }
+.Fax 				{display: inline; }
+.Fax:before			{content: "Fax: "; }
+.email 				{display: inline; }
+.email:before			{content: " "; }
+.Picture 			{display: none; }
+.notes 				{display: none; }
+.a         			{display: inline; }
+

@@ -1,0 +1,405 @@
+var gridiron = {};
+gridiron.instance;
+
+gridiron.load = function(xmlSource) {
+	return gridiron.instance = new gridiron.Controller(xmlSource);
+}
+
+gridiron.Player = function(element) {
+	this.player = new Array();
+	for (var i in element.childNodes) {
+		var field = element.childNodes[i];
+		if (field.nodeType == 1)
+			this.player[ field.nodeName ] = field.textContent;
+	}
+}
+
+gridiron.Player.keys = {
+/*
+	com.midas.gridiron.model.Metric[] criteria = com.midas.gridiron.model.recruiter.getSearchSpec().getCriteria();
+	Player[] recruits = recruiter.getRecruits();
+*/
+	FIRSTNAME : "firstName",
+	LASTNAME : "lastName",
+	GRADYEAR : "gradYear",
+	HEADCOACH : "headCoach",
+	HIGHSCHOOL : "highSchool",
+	OFFPOSITION : "offPosition",
+	DEFPOSITION : "defPosition",
+	ZIPCODE : "zipCode",
+
+	TIME10 : "time10",
+	TIME20 : "time20",
+	TIME40 : "time40",
+	TIMESHUTTLE : "timeShttl",
+	
+	HEIGHT : "height",
+	WEIGHT : "weight",
+	SQUAT : "squat",
+	SQUATREPS : "squatReps",
+	BENCH : "bench",
+	BENCHREPS : "benchReps",
+	BROADJUMP : "broadJmp",
+	VERTJUMP : "vertJmp"
+};
+
+// 'alias' keys to shorten collection literals
+var _pk = gridiron.Player.keys;
+gridiron.Player.keys.SPEED_KEYS = new Array (_pk.TIME10, _pk.TIME20, _pk.TIME40, _pk.TIMESHUTTLE );
+gridiron.Player.keys.POWER_KEYS = new Array ( _pk.SQUAT, _pk.SQUATREPS, _pk.BENCH, _pk.BENCHREPS );
+gridiron.Player.keys.EXPLOSIVE_KEYS = new Array (_pk.BROADJUMP, _pk.VERTJUMP );
+gridiron.Player.keys.PLAYER_KEYS = new Array ( _pk.FIRSTNAME, _pk.LASTNAME, _pk.HEIGHT, _pk.WEIGHT );
+gridiron.Player.keys.TEAM_KEYS = new Array ( _pk.GRADYEAR, _pk.HIGHSCHOOL, _pk.HEADCOACH, _pk.ZIPCODE );
+gridiron.Player.keys.POSITION_KEYS = new Array (_pk.OFFPOSITION, _pk.DEFPOSITION );
+
+gridiron.Player.prototype = {
+	firstName : function() { return this.player["firstName"]; },
+	lastName : function() { return this.player["lastName"]; },
+	height : function() { return this.player["height"]; },
+	weight : function() { return this.player["weight"]; },
+	gradYear : function() { return this.player["gradYear"]; },
+	headCoach : function() { return this.player["headCoach"]; },
+	offPosition : function() { return this.player["offPosition"]; },
+	defPosition : function() { return this.player["defPosition"]; },
+	zipCode : function() { return this.player["zipCode"]; },
+	squat : function() { return this.player["squat"]; },
+	squatReps : function() { return this.player["squatReps"]; },
+	bench : function() { return this.player["bench"]; },
+	benchReps : function() { return this.player["benchReps"]; },
+	weight : function() { return this.player["weight"]; },
+	weight : function() { return this.player["weight"]; },
+	time10 : function() { return this.player["time10_1"]; },
+	time20 : function() { return this.player["time20_1"]; },
+	time40 : function() { return this.player["time40_1"]; },
+	timeShttl : function() { return this.player["timeShttl_1"]; },
+	broadJmp : function() { return this.player["broadJmp_1"]; },
+	vertJmp : function() { return this.player["vertJmp_1"]; }
+}
+
+gridiron.Recruiter = function (players) {
+	
+	this.players = this.recruits = players;
+	this.criteria = new Array();
+}
+	
+	
+gridiron.Recruiter.prototype = {
+	getRecruits: function() {
+		return this.recruits;
+		//return PlayerUtil.sort(PlayerUtil.filter(players, criteria), criteria);
+	},
+	
+	getCriteria: function() {
+		return this.criteria;
+	},
+	
+	getSearchSpec: function() {
+		return this.criteria;
+	},
+	
+	addCriterion: function(metric) {
+		alert("Adding " + metric + " to criteria, size: " + this.criteria.length);
+		this.criteria.push(metric);
+		alert("Now have " + this.criteria.length + " criteria");
+		this.recruits = this.filter(players, criteria);
+		System.out.println("filtered to " + recruits.length + " recruits");
+		
+		this.sort(recruits, criteria);
+	},
+	
+	filter: function(candidates, criteria) {
+		alert("PLAYERUTILFILTER " + candidates.length + " candidates");
+		var recruits = new Array();
+		
+		for (var i = 0; i < candidates.length; i++) {
+			var player = candidates[i];
+			
+			for (var j = 0; j < criteria.length; j++) {
+				var need = criteria[j];
+				var key = need.getKey();
+				alert("need is " + need);
+				var got = player.getMetric(key);
+				if (got == null) {
+					log("missing key " + key);
+				}
+				else {
+					if (!got.test(need)) { // filter it
+						player = undefined;
+						break;
+					}
+				}
+			}
+			
+			if (player)
+				recruits.add(player);
+		}
+		
+		return recruits;
+	},
+	
+	
+	/*
+	 * sort the list of players according to the criteria provided
+	 * the first criteria is the primary sort, the second the secondary, etc.
+	 * @return inverse sorted list of the players input
+	 */
+	sort: function(recruits, criteria) {
+		
+		if (recruits == null)
+			return;
+		
+		try {
+			alert("PLAYERUTIL: sorting " + recruits.length + " recruits");
+
+			Arrays.sort(recruits, function(o1, o2) {
+			
+				if (!m1.getKey().equals(m2.getKey()))
+					return m1.getKey().compareTo(m2.getKey());
+		
+				return m1.compareTo(m2);
+				});
+		}
+		catch (e) {
+			alert(e);
+		}
+	}
+}
+
+gridiron.Controller = function(xmlSource) {
+	this.players = new Array();
+	var xmlDoc = gridiron.util.loadXmlDoc(xmlSource);
+	var elements = xmlDoc.getElementsByTagName('player');
+	for (var i = 0; i < elements.length; i++) { 
+		this.players.push(new gridiron.Player(elements[i]));
+	}
+	this.recruiter = new gridiron.Recruiter(this.players);
+	this.view = gridiron.view.START;
+}
+
+gridiron.Controller.prototype = {
+	players : function() {
+		return this.players;
+	},
+	cancel : function () {
+		history.back();
+	},
+	back: function() {
+		history.back();
+	},
+	shutdown: function() {
+		alert("bye!");
+		this.action = gridiron.Control.actions.RESET;
+	},
+	pick: function() {
+		this.action = gridiron.Control.actions.ADD_CRITERION;
+	},
+	start: function() {
+	},
+	pickCriterion: function(e) {
+		alert(e + "-tester");
+	},
+	deleteCriterion: function() {
+	},
+	setCriterionValue: function() {
+	},
+	printView: function() {
+	},
+	showCriteriaList: function() {
+		alert(this.recruiter.getCriteria().length + " in list");
+	}
+}
+
+
+/*
+xxxgridiron.Control.actions = {
+	RESET : "start",
+	DONE : "quit",
+	CANCEL : "cancel",
+	RECRUIT : "recruit",
+	PICK_CRITERION : "select",
+	SET_CRITERION : "pick",
+	ADD_CRITERION  : "add",
+	DEL_CRITERION : "del",
+	VIEW_PLAYERS  : "view",
+	PRINT_PLAYERS  : "print",
+	SHUTDOWN : "shutdown"
+}
+
+gridiron.Control.prototype = {
+	cancel : function () {
+		history.back();
+	},
+	back: function() {
+		history.back();
+	},
+	shutdown: function() {
+		alert("bye!");
+		this.action = gridiron.Control.actions.RESET;
+	},
+	pick: function() {
+		this.action = gridiron.Control.actions.ADD_CRITERION;
+	},
+	start: function() {
+	},
+	pickCriterion: function() {
+	},
+	deleteCriterion: function() {
+	},
+	setCriterionValue: function() {
+	}
+}
+*/
+
+gridiron.view = {
+	showErrors : function () {},
+	showCriteria: function(criteria) {
+		$("haveCriteria").show();
+		var e = $("criteriaList");
+alert(e + " in cList");
+		for (var i = 0; i < criteria.length; i++) {
+			insert(e, $E('li', criteria[i]));
+				//<% for (int i = 0; i < criteria.length; i++) { %>
+					//<li><gridiron:metricValue edit="false" key="<%=criteria[i].getKey()%>" value="<%=criteria[i].getValue().toString()%>" /></li>
+		}
+/*
+			<p>
+			<%
+				int matched = recruits.length;
+				int max = gridiron.model.Recruiter.MAX_MATCHES;
+				String s = "No";
+				if (matched > 0)
+				s = (matched > max) ? ("Over " + max) : (""+matched);
+						out.print("<p><b>" + s + "</b> " + (matched == 1?"player meets" : "players meet") + " these criteria.");
+			%>
+			</p>
+*/
+	},
+	showMetricGroup: function(groupKey, metricKeys) {
+		var eol = '\n';
+		try {
+			document.write("<div class=\"metric-group\">" + eol
+				+ "\t<p class=\"title\">"+ gridiron.resources.metricgroup[groupKey] +"</p>" + eol
+				+ "\t<div class=\"select\">" + eol);
+
+			for (var i = 0; i < metricKeys.length; i++) {
+				document.write(
+				"\t<input type=\"radio\" name=\"criterion\" value=\"" + metricKeys[i] 
+				+ "\" onclick=\"gridiron.instance.pickCriterion(this)\" /><span>" + gridiron.resources.metric[metricKeys[i]] + "</span><br/>" + eol);
+			}
+
+			document.write("</div>" + eol + "</div>");
+		} catch (e) {
+			throw ("MetricGroupTag: " + e);
+		}
+	},
+}
+
+gridiron.util = {
+	loadXmlDoc : function (xmlSource) {
+		var xmlDoc;
+		// code for IE
+		if (window.ActiveXObject) {
+			xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+		}
+		// code for Mozilla, Firefox, Opera, etc.
+		else if (document.implementation && document.implementation.createDocument) {
+			xmlDoc = document.implementation.createDocument("", "", null);
+		}
+		else {
+			alert('Your browser cannot handle this script');
+		}
+		xmlDoc.async = false;
+		xmlDoc.load(xmlSource);
+		return xmlDoc;
+	}
+}
+
+/*
+function Gridiron(xmlSource) {
+	this.players = new Array();
+	var xmlDoc = gridiron.util.loadXmlDoc(xmlSource);
+	var elements = xmlDoc.getElementsByTagName('player');
+	for (var i = 0; i < elements.length; i++) { 
+		this.players.push(new gridiron.Player(elements[i]));
+	}
+	this.recruiter = new gridiron.Recruiter(this.players);
+	this.view = gridiron.view.START;
+}
+
+Gridiron.prototype = {
+	players : function() {
+		return this.players;
+	},
+	cancel : function () {
+		history.back();
+	},
+	back: function() {
+		history.back();
+	},
+	shutdown: function() {
+		alert("bye!");
+		this.action = gridiron.Control.actions.RESET;
+	},
+	pick: function() {
+		this.action = gridiron.Control.actions.ADD_CRITERION;
+	},
+	start: function() {
+	},
+	pickCriterion: function(e) {
+		alert(e.value);
+	},
+	deleteCriterion: function() {
+	},
+	setCriterionValue: function() {
+	},
+	printView: function() {
+	},
+}
+*/
+
+gridiron.resources = {
+	metric: {
+		time10: "10 Yards",
+		time20: "20 Yards",
+		time40: "40 Yards",
+		timeShttl: "Pro Shuttle",
+		squat: "Squat",
+		squatReps: "Squat Reps",
+		bench: "Bench",
+		benchReps: "Bench Reps",
+		broadJmp: "Broad Jump",
+		vertJmp: "Vertical Jump",
+		firstName: "First Name",
+		lastName: "Last Name",
+		height: "Height",
+		weight: "Weight",
+		gradYear: "Graduation Year",
+		highSchool: "High School",
+		headCoach: "Head Coach",
+		zipCode: "Zip Code",
+		offPosition: "Offense Position",
+		defPosition: "Defense Position",
+	},
+	metricgroup : {
+		power: "Power",
+		speed: "Speed",
+		explode: "Explosiveness",
+		player: "Player",
+		team: "Team",
+		position: "Position",
+	},
+	metricvalue: {
+		speed: "{0} <span> <= </span> {1} seconds",
+		reps: "{0} <span> >= </span> {1}",
+		jump: "{0} <span> <= </span> {1} inches",
+		weight: "{0} <span> >= </span> {1} pounds",
+		height: "{0} <span> >= </span> {1} inches",
+		meta: "{0} <span> begins with </span> {1}",
+		match: "{0} <span> is </span> {1}",
+	},
+	metrichtml: {
+		editor: '<input type="text" name="value" size="{0}" value="{2}" />',
+		editor: '20<input type="text" name="value" size="{0}" value="{2}" />',
+		display: '<span name="criterion">{0}</span>',
+	}
+}

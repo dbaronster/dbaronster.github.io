@@ -1,0 +1,1 @@
+[20-Jan-2018 11:02:59 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58

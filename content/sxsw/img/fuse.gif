@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<title>south by southwest festivals &#43; conferences</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="South by Southwest Music, Film and Interactive Conferences and Festivals - March 9-18, 2007 - Austin, Texas" />
+<meta name="keywords" content="sxsw, conference, festival, austin, texas, music, film, interactive, art, blog, community, bands, films, websites, mp3, audio, download, stream, sxswlive" /> 
+<meta name="robots" content="all" />
+
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/ico" />
+
+<script type='text/javascript' language="JavaScript">
+<!-- Begin SXSW Radio Popup Code
+function popUp(URL) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=1,width=250,height=150');");
+}
+// End -->
+</script>
+
+<script type='text/javascript' language='JavaScript' src='/includes/showcases.livesearch.js'></script>
+<script type='text/javascript' language='JavaScript' src='/includes/screenings.livesearch.js'></script>
+<style type="text/css">
+@import url(/includes/2col.css);
+
+@import "/includes/404.css";
+</style>
+
+
+<!--[if lte IE 7]>
+<style type="text/css">
+.welcome {
+float:right;
+position: relative;
+width:220px;
+text-align:left;
+margin:-35px 0 0 0;
+padding:0;
+font-size:.9em;
+color:#fff;
+}
+</style>
+<![endif]-->
+
+<script type="text/javascript" charset="utf-8">
+        function styleNav() {
+		xxx = "THIS IS A DEBUGGING THING.  PLEASE IGNORE \n";
+                //document.getElementById(document.location.href.split('/')[document.location.href.split('/').length-2]).style.background = '#eee';
+                if(document.location.href=='http://2008.sxsw.com/'){
+                        lelement=document.getElementById('news');
+                }else{
+                	//alert(document.location.href);
+			lhref_length = document.location.href.split('/').length;
+			//alert(xxx + lhref_length);
+			lelement_name = document.location.href.split('/')[lhref_length-2];
+			//alert(xxx+lelement_name);
+			if(lhref_length==7){
+				lelement_name=lelement_name+'_jr';
+			}
+			lelement= document.getElementById(lelement_name);
+                        //lelement= document.getElementById(document.location.href.split('/')[document.location.href.split('/').length-2]);    
+                }
+                if(lelement.className=='subLI'){
+                        //alert(lelement.id);          
+                        parentLI = lelement.parentNode.parentNode;              
+                        //lelement.style.background='#ccc';
+                        //lelement.className='active2';
+			llink=lelement.firstChild;
+			//alert(getLink.tagName);
+			 llink.className='active2';
+			 parentLI.className='activeli';             
+                        parentLI.firstChild.className='active';       
+                }else if(lelement.className=='mainLI'){        
+                        //alert(lelement.style.background);
+			lelement.className='activeli';        
+                        lelement.firstChild.className='active';      
+                }
+        }
+</script>
+
+</head>
+<body onload='styleNav()'>
+
+<div id="container" >
+	<div id="top_nav">
+
+	<a href="/register_to_attend/" title="Register to Attend SXSW 2008">Register to Attend</a>&nbsp;&nbsp;
+	<a href="/register_to_attend/hotels/" title="Book Your Hotel">Book Your Hotel</a>&nbsp;&nbsp;
+	<a href="https://secure.sxsw.com/ec/" title="Shopping Cart">Shopping Cart</a>&nbsp;&nbsp;
+	<a href="https://regdir.sxsw.com/registrants/login" title="Message fellow attendees, book hotel accommodations and much more!">Online Registrant Directory</a>&nbsp;&nbsp;
+	<a href="http://2008.sxsw.com/contact/" title="Have questions or concerns? Let us know.">Contact Us</a>
+	</div>
+
+	<div id="outer" >
+ 		<div id="inner">
+ 			
+<div id='rightbox'><img src='/img/plat_right_bg.gif' /></div>
+   		<div id="contentbox" >
+   	
+<div id="wrap_on">
+
+<div id="navbar">
+
+<div id="mainnav">
+	<ul id="topmenu">
+	<li id="home"><a href="http://sxsw.com/" title="SXSW.COM">SXSW.com</a></li>
+	<li id="sxsweek"><a class="active" href="http://2008.sxsw.com/" title="SXSW 2008">SXSWeek 2008</a></li>
+	</ul>
+</div>
+
+	<span class="righty">
+	
+		<form class="formy" method="get" action="http://www.google.com/search">
+		<input class="text" type="text" name="q" maxlength="255" value="" />
+		<input class="button" type="submit" value="Search" />
+		<input type="hidden" name="as_dt" value="i" />
+		<input type="hidden" name="as_sitesearch" value="sxsw.com" />
+		<input type="hidden" name="as_q" value="-site:2007.sxsw.com -site:2005.sxsw.com -site:2006.sxsw.com -site:lists.sxsw.com" />
+		</form>
+		
+	<a href="http://sxsw.com/info/feeds/"><img class="feed_me" src="/img/feed_me.png" alt="RSS" /></a>
+	
+	</span>
+
+</div>
+
+	<div id='header'>
+    <h1>South by Southwest<br />Conferences and Festivals</h1>
+	<span class='welcome'>
+	<ul class='bullets'>
+	<li><a href='http://2008.sxsw.com/interactive/'>SXSW Interactive</a></li>
+	<li><a href='http://2008.sxsw.com/film/'>SXSW Film</a></li>
+	<li><a href='http://2008.sxsw.com/music/'>SXSW Music</a></li>
+	</ul>
+	<ul class='bullets'>
+	<li><a href='http://2008.sxsw.com/register_to_attend/'>Register Now </a></li>
+	</ul>
+	</span>
+</div>
+
+
+
+	<div id='menu'>
+	
+	<ul class='sx_menu'>
+
+  	<li class='mainLI' id='news'><a href='/'>SXSW 2008 News</a></li>
+  	<li class='mainLI' id='interactive'><a href='/interactive/'>Interactive Event</a>
+  	<ul>
+  		<li class='subLI' id='screenburn_jr'><a href='http://screenburnfest.com/'>ScreenBurn Gaming Fest</a></li>
+  	</ul>
+  	</li>
+  	<li class='mainLI' id='film'><a href='/film/'>Film Event</a></li>
+  	<li class='mainLI' id='music'><a href='/music/'>Music Event</a></li>
+	  	
+  	<li class='mainLI' id='register_to_attend'><a href='/register_to_attend/'>Register to Attend</a>
+  	<ul>
+  		<li class='subLI' id='hotels_jr'><a href='/register_to_attend/hotels/'>Hotels for SXSWeek 2008</a></li>
+    	<li class='subLI' id='travel_discounts_jr'><a href='/register_to_attend/travel_discounts/'>Travel Discounts</a></li>
+    	<li><a href='/register_to_attend/reg_dir/'>Online Reg Directory</a></li>
+	</ul>
+  	</li>
+	
+	<li class='mainLI' id='market_at_sxsw'><a href='/market_at_sxsw/'>Market at SXSW 2008</a>
+  	</li>
+
+	<li class='mainLI' id='tradeshows'><a href='/tradeshow/'>Trade Shows</a>
+    <ul>
+    	<li class='subLI' id='music_jr'><a href='/tradeshow/music_exhibition/'>Music Exhibition</a></li>
+    	<li class='subLI' id='if_jr'><a href='/tradeshow/if_exhibition'>iF! Exhibition</a></li>
+    	</ul>
+	</li>
+	
+	<li class='mainLI' id='sxsworld_magazine'><a href='/sxsworld/feb/'>SXSWorld Magazine</a>
+  	</li>
+
+
+	</ul>
+
+	<ul class='event_portal_menu'>	
+	
+	<!-- <small>Eye on the Event</small> -->
+	
+  	<li class='mainLI' id='tools'><a href='/tools/'>SXSW 
+Tools</a>
+    <ul>
+<!--    	<li><a href='/toolbox/scheduling_apps/'>Scheduling 
+Apps</a></li> -->
+
+<li  class='subLI' id='regdir'><a href='/tools/reg_directory/'>Online 
+Reg Directory</a></li>
+<li class='subLI' id='player'><a href='#' onclick='window.open(&quot;http://player.sxsw.com/2008/player/player2.php&quot;,config=&quot;newwin&quot;,&quot;toolbar=no,status=no,scrollbars=no,location=no,menubar=no,directories=no,width=500,height=400&quot;)'>SXSW Player</a></li>
+<li><a href='/tools/sms/'>SXSW SMS</a></li>
+<li><a href='/tools/gydget/'>Gydget</a></li>
+<li><a href='/tools/facebook/'>Facebook</a></li>
+<li><a href='/tools/operamini/'>Opera Mini</a></li>
+<li><a href='/tools/utterz/'>Utterz</a></li>
+<li><a href='/tools/wifi/'>WiFi</a></li>
+	</ul>  	
+  	</li>
+
+  	<li class='mainLI' id='coverage'><a href='/coverage/'>2008 Coverage</a>
+    <ul>
+    	<li class='subLI' id='video_jr'><a href='http://2008.sxsw.com/coverage/'>Video</a></li>
+    	<li class='subLI' id='podcasts_jr'><a href='http://2008.sxsw.com/coverage/podcasts/'>Podcasts</a></li>
+	</ul>  	
+  	</li>
+	
+	<li><p style='padding-right:15px;line-height:1.2em;'><em>Want to snag some SXSW gear? Looking to update your wardrobe? Check out <a href='http://sxsw.com/merchandise/'>SXSW's official merchandise</a>.</em></p>
+	</li>
+	
+	</ul>
+
+</div>
+
+
+<div id="content">
+<div id='centercolumn'><div class='contentBlock'><h1>Error 404: Page not found</h1>
+The page you were looking for could not be found. Please check the URL and try again.
+</div>
+
+</div>
+<div id='rightcolumn'><div class='contentBlock'><h1>SXSWeek: March 9-18, 2007</h1>
+<p>
+<em>(Registration, Panels, & Trade Show are at the <a href='http://www.austinconventioncenter.com' target='blank'>Austin Convention Center</a> - enter at 4th Street & Neches)</em>
+</p>
+<p><strong>Film & Interactive Conferences, Festivals & Trade Shows</strong></p>
+<p>
+<strong>Friday, March 9, 2007</strong><br />
+Film & Interactive Registration: Noon-8pm<br />
+Film Opening Party<br />
+Film Festival
+</p>
+<p>
+<strong>Saturday, March 10, 2007</strong><br />
+Film & Interactive Registration: 9am-8pm<br />
+Film Panels & Festival<br />
+Interactive & ScreenBurn Panels<br />
+ScreenBurn Arcade<br />
+Interactive Opening Party<br />
+</p>
+<p>
+<strong>Sunday, March 11, 2007</strong><br />
+Film & Interactive Registration: 9am-7pm<br />
+iF! Exhibition<br />
+Film Panels & Festival<br />
+Interactive & ScreenBurn Panels<br />
+ScreenBurn Arcade<br />
+Interactive Web Awards<br />
+</p>
+<p>
+<strong>Monday, March 12, 2007</strong><br />
+Film & Interactive Registration: 10am-6pm<br />
+iF! Exhibition<br />
+Film Panels & Festival<br />
+Interactive & ScreenBurn Panels<br />
+</p>
+<p>
+<strong>Tuesday, March 13, 2007</strong><br />
+Film, Interactive & Music Registration: 10am-8pm<br />
+iF! Exhibition<br />
+Film Panels & Festival<br />
+Interactive & ScreenBurn Panels<br />
+Film Awards & Closing Party<br />
+Interactive Closing Party<br />
+</p>
+
+<h3>Music Conference, Festival & Trade Show</h3>
+<p>
+<strong>Wednesday March 14, 2007</strong><br/>
+Golf Tournament*<br />
+Music Registration: 10am-Midnight<br />
+Music Panels & Festival<br />
+Music Keynote<br />
+Music Welcome Dinner*<br />
+Film Festival<br />
+Austin Music Awards
+</p>
+<p>
+<strong>Thursday, March 15, 2007</strong><br />
+Music Registration: 9am-10pm<br />
+Music Panels, Trade Show, Festival<br />
+Film Festival<br />
+Flatstock Poster Artist Show<br />
+</p>
+<p>
+<strong>Friday, March 16, 2007</strong><br/>
+Music Registration: 10am-9pm<br />
+Music Panels, Trade Show, Festival<br />
+Film Festival<br />
+Flatstock Poster Artist Show<br />
+</p>
+
+<p><strong>Saturday, March 17, 2007</strong><br />
+Music Registration: 11am-4pm<br />
+Music Panels, Trade Show, Festival<br />
+Film Festival<br />
+Flatstock Poster Artist Show<br />
+</p>
+
+<p><strong>Sunday, March 18, 2007</strong><br />
+Softball Tournament & Barbecue<br />
+Music Festival
+</p>
+<p>
+<em>* = Additional Charge</em><br />
+<br />
+
+<em>(All events subject to change)</em>
+</p>
+
+
+</div>
+
+</div>
+<div id='sponsorcolumn'>
+	
+	<p>
+	<small>SXSW 2008 is proudly sponsored by...</small>
+	</p>
+	
+	<p>
+	<a href='http://sxsw.com/sponsors/#dell'><img style='padding-left:2px;' src='/img/dell.gif' alt='Dell Lounge' /></a>
+	</p>
+
+	<p>
+	<a href='http://sxsw.com/sponsors/#miller'><img style='padding-left:8px;' src='/img/miller.gif' alt='Miller' /></a>
+	</p>
+	
+	<p>
+	<a href='http://sxsw.com/sponsors/#fuze'><img style='padding-left:6px;' src='/img/fuze.gif' alt='Fuze' /></a>
+	</p>
+
+	<p>
+	<a href='http://sxsw.com/sponsors/#ifc'><img style='padding-left:8px;' src='/img/ifc.gif' alt='IFC' /></a>
+	</p>
+
+	<p>
+	<a href='http://sxsw.com/sponsors/#yaris'><img style='padding-left:8px;' src='/img/yaris.gif' alt='Yaris' /></a>
+	</p>
+
+	<p>
+	<a href='http://sxsw.com/sponsors/#chronicle'><img style='padding-left:8px;' src='/img/chronicle.gif' alt='The Austin Chronicle' /></a>
+	</p>
+	
+	</div></div>
+
+
+<div id="footer"></div>
+
+	<div class="centered">
+	<table><tr><td>Technology Partner</td><td><a href="http://grandecom.com"><img class="technology_partner" src="/img/grande.gif" alt="Grande Communications" title="Technology Partner: Grande Communications" /></a></td>
+	<td>Hosting By</td><td><a href="http://corenap.com"><img class="hosting_provider" src="/img/corenap.gif" alt="Core NAP" title="Hosting Provided by Core NAP" /></a></td>
+	</tr></table>
+	</div>
+
+</div>
+
+   		</div>
+		</div>
+	</div>
+ 	
+ 	<div id="subfooter"><p>
+ 	<a href="http://screenburnfest.com/">ScreenBurnFest.com</a>&nbsp;|&nbsp;
+	<a href="http://sxswclick.com/">SXSWclick.com</a>&nbsp;|&nbsp;
+	<a href="http://klru.org/sxswpresents">SXSW Presents</a>&nbsp;|&nbsp;
+	<a href="http://sxswnetworks.com/">SXSWnetworks.com</a><br />
+	&copy; 1995-2008 South by Southwest, Inc&nbsp;|&nbsp;<a href="http://sxsw.com/privacy_policy/">Privacy Policy</a></p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var maildivider="[at]"
+for (i=0; i<=(document.links.length-1); i++){
+if (document.links[i].href.indexOf(maildivider)!=-1)
+document.links[i].href=document.links[i].href.split(maildivider)[0]+"@"+document.links[i].href.split(maildivider)[1]
+}
+</script>
+
+<script src="http://www.google-analytics.com/urchin.js" 
+type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-74581-9";
+_udn="sxsw.com";
+urchinTracker();
+</script>
+
+
+
+</body>
+</html>

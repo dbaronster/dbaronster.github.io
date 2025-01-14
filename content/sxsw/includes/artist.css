@@ -1,0 +1,55 @@
+
+<!--
+/* <![CDATA[ */	
+
+/* music-specific styles, colors, etc */
+
+div#artist_photo {  
+  margin-top: -1px;
+  margin-right: -1px;
+}
+div#artist_info {
+  border-bottom: 1px solid #333333;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.artist_genre, .artist_hometown, .artist_homestate, .artist_website {
+  font-style: italic;
+  font-weight: bold;
+}
+.artist_genre {
+  padding-right: 10px;
+}
+div#artist_name {
+  background-color: #e4e4cc;
+  text-align: center;
+  /*font-size: 2em;*/
+	font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #333333;
+}
+div#showcase_info {
+  text-align: center;
+  background-color: #e4e4cc;
+  font-size: 1em;
+  padding-top: 5px;
+  border-bottom: 1px solid #333333;
+}
+.showcase_day, .showcase_time, .club_name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+div#artist_mp3_info {
+  padding-top: 10px;
+  text-align: center;
+}
+div#artist_bio {
+  margin-top: 5px;
+  padding: 5px;
+  border-top: 1px solid #333333;
+	overflow: auto;
+}
+
+ /* ]]> */	
+-->

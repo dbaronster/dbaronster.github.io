@@ -1,0 +1,74 @@
+div.print-zone {
+	width:9.5in;
+	}
+
+div.players {
+	padding: 0px;
+	}
+
+div.players p {
+	font-size: xx-small;
+	margin: 0px;
+	}
+
+div.players p span.pid {
+	border-left: 1px solid #115511;
+	background-color: #BDB76B;
+	width: 2%;
+	clear: left;
+	}
+
+div.players p span.year {
+	width: 5%;
+	}
+
+div.players p span.name {
+	width: 8%;
+	line-height: 1.1em;
+	text-align: left;
+	padding-left: 0.5em;
+	}
+
+div.players p span.time {
+	width: 4%;
+	}
+
+div.players p span.power {
+	width: 6%;
+	}
+
+div.players p span.expl {
+	width: 5%;
+	}
+
+div.players p span.zip {
+	width: 5%;
+	}
+
+div.players p span {
+	background-color: white;
+	width: 5%;
+	height: 2.2em;
+	border-right: 1px solid #114411;
+	border-bottom: 1px solid #114411;
+	float:left;
+	vertical-align: bottom;
+	text-align: center;
+	padding-bottom: 4px;
+	}
+
+div.players p.header {
+	height: 100%;
+	}
+
+div.players p.header span {
+	border-top: 1px solid #113311;
+	line-height: 1em;
+	background: #BDB76B;
+	height: 2.5em;
+	vertical-align: middle;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #220022;
+	}
+

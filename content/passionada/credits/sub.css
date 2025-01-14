@@ -1,0 +1,19 @@
+table.recipe p {
+	padding-top: 0px;
+	padding-left: 50px;
+	padding-right: 100px;
+}
+
+table.cast p, table.credits p {
+	padding-top: 0px;
+	padding-left: 50px;
+	padding-right: 120px;
+}
+
+table.cast pre, table.credits pre {
+	font-family: verdana, arial, sans-serif;
+	font-size: 10pt;
+	padding-top: 0px;
+	padding-left: 50px;
+	padding-right: 110px;
+}

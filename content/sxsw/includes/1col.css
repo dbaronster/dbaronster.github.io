@@ -1,0 +1,594 @@
+<!--
+/* <![CDATA[ */	
+
+/* sxsw festivals 2008 - 1 column layout */
+
+/* the basics + structural elements */
+
+body {
+margin:0;
+padding:0;
+color:#222;  
+text-align:center;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size:1em;
+}
+
+#container {
+width: 960px;
+padding:0px;
+margin: 0px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#outer{
+background-color: #ffffff;
+} 
+
+#inner{
+margin:0px; width:100%;
+}
+
+#rightbox {
+width:40px; 
+float:right; 
+position:relative; 
+margin-right:-40px; 
+margin-left:1px;
+height:100%;
+}
+
+#contentbox { 
+position: relative; 
+margin: 0px;
+border-left: 1px solid #ddd;
+}
+
+#subfooter {
+clear:right;
+text-align:center;
+padding: 0;
+margin:0 0 1em 0;
+height: 40px;
+} 
+
+
+/* top_nav */
+
+#top_nav {
+text-align: right;
+padding:.3em 2em .3em .2em;
+margin: 0px;
+margin-right: 40px;
+text-align:right;
+vertical-align: middle;	
+font-family: "Lucida Grande", verdana, sans-serif;
+font-size:.7em;
+text-transform:none;
+}
+
+#top_nav a {
+color:#183045;
+font-weight: bold;
+text-decoration:none;
+}
+
+#top_nav a:hover {
+color:#999;
+text-decoration:none;
+}
+
+
+/* wrap on, wrap off */
+
+#wrap_on {
+margin:0;
+padding:0;
+text-align:left;
+vertical-align: middle;
+background-color:#ffffff;
+}
+
+
+/* navbar containing mainnav tabs */
+
+#navbar {
+margin:0;
+padding:0;
+border-top: 1px solid #ddd;
+}
+
+/* Hides from IE-mac \*/
+* html #navbar {
+height: 51px;
+padding-left:1px;
+}
+/* End hide from IE-mac */
+
+.righty {
+float:right;
+position:relative;
+vertical-align: middle;
+margin:-37px 15px 0 0;
+padding:0;
+}
+
+.formy {
+display:inline;
+margin:0;
+padding:0;
+}
+
+#navbar input.text {
+width:130px;
+color:#777;
+font-weight: bold;
+}
+
+#navbar input.button {
+margin: 0 0 0 0;
+color: #fff;
+background: #aaa;
+font-size: x-small;
+font-weight: bold;
+}
+
+.feed_me {
+padding: 2px 0 0 15px;
+vertical-align: middle;
+}
+
+.alt {
+padding: 0 0 0 15px;
+font-size:.7em;
+}
+
+
+/* mainnav based on dave shea's handywork of course (http://www.alistapart.com/articles/sprites/) */
+
+div#mainnav	{
+height: 50px;
+width: 415px;
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+div#mainnav ul#topmenu {
+width: 415px;
+height: 50px;
+background: url(/img/tabnav.gif);
+margin: 0px auto; padding: 0;
+position: relative;
+}
+
+div#mainnav ul#topmenu li {margin: 0; padding: 0; list-style: none; display: block; position: absolute;}
+
+ul#topmenu a {display: block;}
+
+div#mainnav ul#topmenu li a {text-indent:-9999px; text-decoration:none; outline: 0;}
+
+#home {left: 0px; top: 0px; width: 190px; height: 50px;}
+#sxsweek {left: 191px; top: 0px; width: 224px; height: 50px;}
+
+#home a {height: 50px;}
+#sxsweek a {height: 50px;}
+
+#home a:hover, #home a.active {background: url(/img/tabnav.gif) -0px -50px no-repeat;}
+#sxsweek a:hover, #sxsweek a.active {background: url(/img/tabnav.gif) -191px -50px no-repeat;}
+
+
+/* header */
+
+#header {
+margin:0;
+padding:0;
+width: 919px;
+height:164px;
+background-color:#eee;
+overflow: hidden;
+}
+
+#header h1 {
+margin:0 0 0 0;
+padding:7px 0 0 15px;
+font-size:.9em;
+font-weight:bold;
+letter-spacing:.1em;
+color:#ffffff;
+}
+
+#header a {
+color:#fff;
+font-weight: bold;
+}
+
+#header a:hover {
+color:#999;
+}
+
+.welcome {
+float:right;
+position: relative;
+width:225px;
+text-align:left;
+margin:-45px 0 0 0;
+padding:0;
+font-size:.9em;
+color:#fff;
+}
+
+/* Hides from IE-mac \*/
+* html .welcome {
+margin: 12px 0 0 0;
+}
+/* End hide from IE-mac */
+
+#header ul.bullets {
+list-style-type: square;
+}
+
+
+/* menu items */
+
+#menu {
+margin:10px 10px 1em 0;
+padding:0;
+float:left;
+position: relative;
+width:200px;
+font-family: "Lucida Grande", verdana, sans-serif;
+background-color:#fff;
+}
+
+#menu li {
+margin:0 0 0 0;
+padding:.3em;
+font-size:.8em;
+}
+
+#menu ul {
+margin:0 0 0 .8em;
+padding:0 0 0 0;
+list-style:none;
+}
+
+#menu ul.event_portal_menu {
+background-color:#fff;
+}
+
+
+/* content frame */
+
+#content { 	
+text-align:left;
+margin-top: 5px;
+background-color:#ffffff;
+}
+
+
+/* columns */
+
+#centercolumn {
+margin:0 20px 1em 0;
+padding:0;
+float:left;
+position: relative;
+width:550px;
+background-color:#fff;
+line-height:1.1em;
+overflow: hidden;
+}
+
+#sponsorcolumn {
+margin:0 0 1em 20px;
+padding:0;
+float:left;
+position:relative;
+width:110px;
+background-color:#fff;
+}
+
+/* Hides from IE-mac \*/
+* html #sponsorcolumn {margin: 0 0 1em 20px;}
+/* End hide from IE-mac */
+
+
+/* footer */
+
+#footer {
+position:relative;
+clear:both;
+bottom:0;
+margin:0;
+padding:.3em .2em .3em .2em;
+line-height:1.1em;
+text-align:center;
+font-size:.7em;
+color:#222;
+background-color:#fff;
+}
+
+div.centered table 
+{
+margin: 0 auto; 
+text-align: left;
+padding:.3em .2em .3em .2em;
+font-size:.7em;
+color:#222;
+background-color:#fff;
+}
+
+#footer td {
+vertical-align: middle;
+}
+
+.technology_partner {
+padding:0 2em 0 .3em;
+}
+
+.hosting_provider {
+padding:0 0 0 .1em;
+}
+
+
+/* sub-footer */
+
+#subfooter p {
+margin:0;
+padding:.3em 2em 0 .2em;
+color: #ffffff;
+font-family: "Lucida Grande", verdana, sans-serif;
+font-size:.7em;
+font-weight: bold;
+} 
+
+#subfooter a {
+color: #ffffff;
+text-decoration: none;
+} 
+
+#subfooter a:hover {
+color: #999;
+text-decoration: none;
+} 
+
+
+/* various stylez yo */
+
+#centercolumn p, #rightcolumn p, #sponsorcolumn p {
+margin: 10px 0 10px 0;
+padding:0;
+font-size:.8em;
+}
+
+#menu p {
+font-size:.8em;
+}
+
+#centercolumn li, #rightcolumn li {
+font-size:.8em;
+}
+
+ul.nobullets {
+margin-left: 5px;
+padding-left: 10px;
+list-style-type: none;
+}
+
+ul.bullets {
+margin-left: 5px;
+padding-left: 10px;
+list-style-type: square;
+}
+
+ul.bullets2 {
+margin-left: 5px;
+padding-left: 10px;
+list-style-type: square;
+}
+
+ul.bullets2 li {
+padding:3px 0 3px 0;
+}
+
+#menu h2, #menu h1 {
+margin: 10px 0 10px 0;
+padding:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:.9em;
+}
+
+#centercolumn h1 {
+margin: 10px 0 10px 0;
+padding:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:.9em;
+}
+
+#rightcolumn h1 {
+margin: 10px 0 10px 0;
+padding:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:.9em;
+}
+
+#centercolumn h2, #rightcolumn h2 {
+margin: 10px 0 10px 0;
+padding:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:.8em;
+}
+
+#centercolumn h3, #rightcolumn h3 {
+margin: 10px 0 10px 0;
+padding:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:.8em;
+}
+
+#sponsorcolumn h2, #sponsorcolumn h1 {
+margin: 10px 0 10px 0;
+padding:0;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:.9em;
+}
+
+
+/* links and classes */
+
+a img {
+	border: none;
+	}
+
+hr {
+border:none;
+width:99%;
+color:#eeeeee;
+background-color:#eeeeee;
+height:1px;
+}
+
+a.mu_link {
+color:#253300;
+}
+
+a:hover.mu_link {
+color:#90a354;
+}
+
+a.fi_link {
+color:#470000;
+}
+
+a:hover.fi_link {
+color:#e15b53;
+}
+
+a.ia_link {
+color:#3f1b00;
+}
+
+a:hover.ia_link {
+color:#e77f2c;
+}
+
+.centered {
+text-align: center;
+}
+
+
+/* img stylez */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	padding: 7px;
+	background:#eeeeee;
+	}
+
+img.centerednb {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	padding: 7px;
+	background:#ffffff;
+	}
+
+img.framed {
+	display: block;
+	margin: 0 0 5px 0;
+	padding: 7px;
+	background:#eeeeee;
+	}
+
+img.alignright {
+	padding: 7px;
+	margin: 0 0 5px 10px;
+	display: inline;
+    background:#eeeeee;
+	}
+
+img.alignrightnb {
+	padding: 7px;
+	margin: 0 0 5px 10px;
+	display: inline;
+    background:#ffffff;
+	}
+
+img.alignleft {
+	padding: 7px;
+	margin: 0 10px 5px 0;
+	display: inline;
+    background:#eeeeee;
+	}
+
+img.alignleftnb {
+	padding: 7px;
+	margin: 0 10px 5px 0;
+	display: inline;
+    background:#ffffff;
+	}
+
+.alignright, .alignrightnb {
+	float: right;
+	}
+	
+.alignleft, .alignleftnb {
+	float: left;
+	}
+
+#sponsorcolumn img {
+padding-top:10px;
+}
+
+.filmbuttonhref:link, .filmbuttonhref:visited {
+  border: 2px outset black;
+  padding: 2px;
+  line-height: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;   
+  background: #6699BB;
+}
+
+li.bb {
+list-style-type: square;
+}
+
+img.icono_left {
+padding:3px 10px 3px 0;
+display: inline;
+background:#ffffff;
+}
+
+img.icono_right {
+padding:3px 0 3px 10px;
+display: inline;
+background:#ffffff;
+}
+
+.icono_left {
+float: left;
+}
+
+.icono_right {
+float: right;
+}
+
+.vevent abbr {
+border:0;
+}
+
+
+ /* ]]> */	
+-->

@@ -1,0 +1,51 @@
+body {
+	font-family: verdana, sans-serif, arial, helvetica;
+	font-size: 12px;
+	color: #333333;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+}
+a {
+	color: #990000;
+}
+td {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+td p {
+	padding-left: 0px;
+	padding-right: 18px;
+}
+.main {
+	position: fixed;
+	left: 20px;
+	margin: 0px;
+	padding: 0px;
+	width: 742px;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+}
+.logo {
+	position: fixed;
+	top: 20px;
+}
+.subbody {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.bottom {
+	clear: both;
+	position: float;
+}
+div.spacer {
+	clear: both;
+} 
+.large_photo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 20px;
+}

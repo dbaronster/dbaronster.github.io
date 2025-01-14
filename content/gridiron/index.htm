@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Gridiron Recruits</title>
+	<link type="text/css" href="style/gridiron.css" rel="stylesheet">
+	<script language="javascript" type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+	<style type="text/css">
+		.message {
+			font-style: italic;
+			text-decoration: blink;
+			}
+	</style>
+		<script language="javascript">
+		<!-- start hiding
+			var n = 0	
+			var pic = new Image(10,10);
+			var server = "/gridiron/";
+			
+			function checkServer(){
+				
+				if (n % 2 == 0) { //true first and all even iterations
+					pic.src = server + "images/gridiron.jpg";
+				}
+				else if (pic.complete) { //server is up!
+					document.location.href = server + "recruit.htm";
+				}
+				updateStatus( " " + ++n );
+			}
+
+			function updateStatus(status) {
+				var targetNode = $('#status');
+//				$("#status").fadeOut(1500);
+				targetNode.html(status);
+//				targetNode.style.textDecoration = 'none';
+			}
+			
+			$( document ).ready(function() {
+    			checkServer();
+			});
+		// -->
+		</script>
+</head>
+
+<body background="images/background.jpg" onload="setInterval('checkServer()', 1200)" >
+	<form>
+	<h1>Gridiron Recruits</h1>
+	<table border="0" width="100%" cellspacing="0" cellpadding="0">
+		<tr valign="top">
+			<td><div class="panel">
+				<p style="margin-top:0em;"><b>The Player database is loading</b>.  Players have been tested for:</p>
+				<p class="clean"><b>Power</b></p><ul>
+					<li>Bench - Weight and Repetitions</li>
+					<li>Squats - Weight and Repetitions</li></ul>
+				<p class="clean"><b>Explosiveness</b></p><ul>
+					<li>Broad Jump - Distance</li>
+					<li>Vertical Jump - Distance</li></ul>
+				<p class="clean"><b>Speed</b></p><ul>
+					<li>10, 20 and 40 Yards - Seconds</li>
+					<li>Pro Shuttle - Seconds</li></ul>
+				<p>The player's <b>positions</b>, <b>height</b> &amp; <b>weight</b>, <b>high school</b>, 
+				<b>coach</b> and <b>graduation year</b> are also recorded.</p>
+				<p class="message">Waiting for player database to come online...&nbsp;<span id="status">&nbsp;</span></p>
+			</div></td>
+		</tr>
+	</table>
+	</form>
+	<hr/>
+	<div class="copyright">Copyright &copy; 2004 Midas Networks, Inc. &amp; Douglas Baron</div>
+</body>
+</html>
+

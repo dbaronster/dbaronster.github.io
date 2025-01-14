@@ -1,0 +1,21 @@
+[03-Jun-2017 02:25:21 US/Central] PHP Warning:  Unknown: Your script possibly relies on a session side-effect which existed until PHP 4.2.3. Please be advised that the session extension does not consider global variables as a source of data, unless register_globals is enabled. You can disable this functionality and this warning by setting session.bug_compat_42 or session.bug_compat_warn to off, respectively in Unknown on line 0
+[22-Aug-2017 03:05:46 US/Central] PHP Warning:  Unknown: Your script possibly relies on a session side-effect which existed until PHP 4.2.3. Please be advised that the session extension does not consider global variables as a source of data, unless register_globals is enabled. You can disable this functionality and this warning by setting session.bug_compat_42 or session.bug_compat_warn to off, respectively in Unknown on line 0
+[09-Nov-2017 17:52:16 US/Central] PHP Warning:  Unknown: Your script possibly relies on a session side-effect which existed until PHP 4.2.3. Please be advised that the session extension does not consider global variables as a source of data, unless register_globals is enabled. You can disable this functionality and this warning by setting session.bug_compat_42 or session.bug_compat_warn to off, respectively in Unknown on line 0
+[24-Dec-2017 09:40:05 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[20-Apr-2018 21:58:57 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[24-Apr-2018 18:28:02 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[24-Apr-2018 18:28:06 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[18-Jun-2018 18:12:38 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[18-Jun-2018 18:12:52 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[27-Oct-2018 22:47:01 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[11-Nov-2018 11:33:26 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[11-Nov-2018 11:33:31 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[11-Jan-2023 04:13:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/imagick.so' - libMagickWand.so.5: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Jan-2023 04:13:34 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library '/opt/cpanel/ea-php56/root/usr/lib64/php/modules/imagick.so' - libMagickWand.so.5: cannot open shared object file: No such file or directory in Unknown on line 0
+[11-Jan-2023 04:13:34 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[13-Dec-2023 04:31:11 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[13-Dec-2023 04:31:12 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[14-Dec-2023 02:41:33 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[14-Dec-2023 02:41:33 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58
+[16-Aug-2024 14:06:10 UTC] PHP Warning:  Module 'imagick' already loaded in Unknown on line 0
+[16-Aug-2024 14:06:10 UTC] PHP Fatal error:  Call to undefined function session_register() in /home/dbaron/public_html/application.php on line 58

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xs:annotation>
+		<xs:documentation>
+		GridIron Schema
+		March 23, 2004 - Work started
+		</xs:documentation>
+	</xs:annotation>
+	
+	<xs:complexType name="players">
+		<xs:sequence>
+			<xs:element name="id" type="xs:ID"/>
+			<xs:element name="firstName" type="xs:string"/>
+			<xs:element name="lastName" type="xs:string"/>
+			<xs:element name="height" type="xs:integer"/>
+			<xs:element name="weight" type="xs:integer"/>
+			<xs:element name="gradYear" type="xs:string"/>
+			<xs:element name="highSchool" type="xs:string"/>
+			<xs:element name="headCoach" type="xs:string"/>
+			<xs:element name="offPosition" type="xs:string"/>
+			<xs:element name="defPosition" type="xs:string"/>
+			<xs:element name="zipCode" type="xs:string"/>
+			<xs:element name="time10-1" type="xs:float"/>
+			<xs:element name="time10-2" type="xs:float"/>
+			<xs:element name="time10-3" type="xs:float"/>
+			<xs:element name="time20-1" type="xs:float"/>
+			<xs:element name="time20-2" type="xs:float"/>
+			<xs:element name="time20-3" type="xs:float"/>
+			<xs:element name="time40-1" type="xs:float"/>
+			<xs:element name="time40-2" type="xs:float"/>
+			<xs:element name="time40-3" type="xs:float"/>
+			<xs:element name="timeShttl-1" type="xs:float"/>
+			<xs:element name="timeShttl-2" type="xs:float"/>
+			<xs:element name="timeShttl-3" type="xs:float"/>
+			<xs:element name="squat" type="xs:integer"/>
+			<xs:element name="squatReps" type="integer:float"/>
+			<xs:element name="bench" type="xs:float"/>
+			<xs:element name="benchReps" type="xs:integer"/>
+			<xs:element name="broadJmp-1" type="xs:integer"/>
+			<xs:element name="broadJmp-2" type="xs:integer"/>
+			<xs:element name="vertJmp-1" type="xs:integer"/>
+			<xs:element name="vertJmp-2" type="xs:integer"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="gridiron">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="players" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

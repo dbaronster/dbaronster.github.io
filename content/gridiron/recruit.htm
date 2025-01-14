@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Gridiron Recruits</title>
+		<link type="text/css" href="style/gridiron.css" rel="stylesheet">
+		<script language="javascript" type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/gridiron.js"></script>
+		<script language="javascript">
+		<!-- start hiding
+			//var players = new Array();
+			function doExit() {
+				if (confirm("Leave the Gridiron Server?")) {
+					document.location=document.location.pathname+"?action=shutdown";
+				}
+			}
+		// -->
+		</script>
+	</head>
+
+	<body background="images/background.jpg">
+		<form>
+		<h1>Gridiron Recruits</h1>
+		<table border="0" width="100%" cellspacing="0" cellpadding="0">
+			<tr valign="top">
+				<td><div class="panel">
+					<p style="margin-top:0em;"><b>The Player database is online</b>. <span id="pCount">?</span> players have been tested for:</p>
+					<p class="clean"><b>Power</b></p><ul>
+						<li>Bench - Weight and Repetitions</li>
+						<li>Squats - Weight and Repetitions</li></ul>
+					<p class="clean"><b>Explosiveness</b></p><ul>
+						<li>Broad Jump - Distance</li>
+						<li>Vertical Jump - Distance</li></ul>
+					<p class="clean"><b>Speed</b></p><ul>
+						<li>10, 20 and 40 Yards - Seconds</li>
+						<li>Pro Shuttle - Seconds</li></ul>
+					<p>The player's <b>positions</b>, <b>height</b> &amp; <b>weight</b>, <b>high school</b>, 
+					<b>coach</b> and <b>graduation year</b> are also recorded.</p>
+					<!--p>To recruit, you can specify minimum or maximum values for any of these criteria.</p-->
+					<div class="floatRight"><button type="button" onclick='window.location="criterion.htm"' >Start Recruiting</button>&nbsp;
+				</div></td>
+				<td><div class="panel" style="font-size: x-small">
+					<p><b>Dear Coach</b>,</p>
+					<p>Welcome to the Gridiron Recruits recruiting database.  Gridiron Recruits evaluates high school athletes 
+					using standard tests.  We provide a web site to help the student athletes with the recruiting process and 
+					then we distribute the data in an easy to access form to Colleges and Universities across the United States. 
+					&nbsp;Our primary goal is to help the student athlete find a program in which they can excel, both academically 
+					and athletically.  If you need additional copies of this program or have any suggestions on how we may improve 
+					our services to the athlete or to you please contact us.</p>
+					<p>Chuck Rowsey<br/>President</p>
+					<!--br/><p>Phone (555) 299-9603<a href="http://www.gridironrecruits.com" target="_new">www.gridironrecruits.com</a></p>-->
+					</div><div class="panel" style="font-size: x-small">
+					<p><b>Implementation Notes</b>,</p>
+					<p>This application was designed for a non-technical audience and delivered on a CD for offline viewing.</p>
+					<p>To speed development, I used the technology stack with which I was most familiar: Java, JSP, TagLib, Struts and Tomcat.</p>
+					<p>For demonstration purposes, I rewrote the application completely in Javascript. This preserves the original application's look and feel, but no longer requires server processing and round-trips.</p>
+					<p>Recently updated to use <strong>jQuery 1.10.2</strong> instead of <strong>prototype</strong>. Also added feature to show available range of selected criteria values.</p>
+					<p>Doug Baron<br/>Developer</p>
+				</div></td>
+			</tr>
+		</table>
+		</form>
+		<hr/>
+		<div class="copyright">Copyright &copy; 2004 Midas Networks, Inc. &amp; Douglas Baron</div>
+	</body>
+	<script type="text/javascript">
+		var g = gridiron.load("xml/gridiron.xml");
+		var players = g.players;
+		$("#pCount").html(players.length);
+	</script>
+</html>

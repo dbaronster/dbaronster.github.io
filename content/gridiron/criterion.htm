@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Gridiron Recruits</title>
+		<link type="text/css" href="style/gridiron.css" rel="stylesheet">
+		<link type="text/css" href="style/print-1.css" rel="stylesheet">
+		<script language="javascript" type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+		<script language="javascript" type="text/javascript" src="js/gridiron.js"></script>
+		<script language="javascript" type="text/javascript">
+		<!-- start hiding
+			function doExit() {
+				if (confirm("Leave the Gridiron Server?")) {
+					gridiron.control.shutdown();
+				}
+			}
+		// -->
+		</script>
+	</head>
+
+	<body background="images/background.jpg" link="#023264" alink="#023264" vlink="#023264">
+	<script type="text/javascript">
+		var g = gridiron.load("xml/gridiron.xml");
+	</script>
+
+	<div id="printView" style="display:none">
+		<img src="images/gridiron.jpg" alt="Gridiron Recruits" border="1"/>
+			<div class="players">
+				<p class="header">
+					<span class="pid">#</span>
+					<span class="player">&nbsp;Name</span>
+					<span class="name">High School</span>
+					<span class="year">Grad Year</span>
+					<span class="name">Head Coach</span>
+					<span class="zip">Zip</span>
+					<span class="height">Height</span>
+					<span class="weight">Weight</span>
+					<span class="pos">Position Offense</span>
+					<span class="pos">Position Defense</span>
+					<span class="time">Time 10</span>
+					<span class="time">Time 20</span>
+					<span class="time">Time 40</span>
+					<span class="time">Time Shttle</span>
+					<span class="power">Squat / Reps</span>
+					<span class="power">Bench / Reps</span>
+					<span class="expl">Broad Jump</span>
+					<span class="expl">Vert Jump</span>
+				</p>
+			<div id="filteredPlayerList" style="display:none">
+			</div>
+			<div style="padding: 0em; padding-left: 1em; white-space:nowrap; font-size: x-small;">
+				<form>
+					<div id="printing" style="clear:both;float:left;padding-top:1em">
+						<button type="button" onclick="gridiron.instance.review()">Back</button>
+						<button type="button" name="PrintBtn" onclick="window.print()">Print</button>
+						<div style="font-size:large;">&nbsp;&nbsp;</span><span>For best results, Print in Landscape orientation.</div>
+					</div>
+					<div id="viewing" style="float:left; padding-top:1em;display:none"><span>&nbsp;</span>
+						<button type="button" onclick="gridiron.instance.review()">Back</button>
+						<button type="button" onclick="gridiron.instance.startOver()">Start Over</button>
+						<div id="printFriendly" style="display:none">
+							<button type="button">Print Friendly Display</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="filterView">
+	<form id="playerForm" action="javascript:gridiron.instance.acceptCriterion()"/>
+	<input type="hidden" id="key" value="junk"/>
+	<input type="hidden" id="value" value="junk"/>
+	<input type="hidden" name="criterion" value="junk"/>
+
+	<h1>Gridiron Recruits - Select Criterion</h1>
+	
+		<table cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td valign="top">
+					<div class="left-side">
+					<div class="metric-results">
+						<div id="haveCriteria">
+							<div id="criteriaList"></div>
+							<div id="criteriaAction" style="display:none">
+								<p><button type="button" onclick="gridiron.instance.startOver()">Start Over</button>
+								<button id="viewResultsButton" type="button" onclick="gridiron.instance.viewResults()">View Results</button>
+								</p>
+							</div>
+						</div>
+						<div id="cancelPick" style="display:block">
+							<button type="button" onclick="javascript:document.location='down.htm'">Done</button>
+						</div>
+						<div id="metricEdit" style="display:none">
+							<div id="metricEditFields" style="margin-bottom:6px"></div>
+							<div id="metricRange" style="margin-left:2em; font-size: smaller; margin-bottom:8px">Range: <span id="metricMin">min</span> to <span id="metricMax">max</span></div>
+							<input type="hidden" name="metricKey" id="metricKey" value=""/>
+							<button type="button" onclick="gridiron.instance.acceptCriterion()">Add Criterion</button>
+							<button type="button" onclick="gridiron.instance.cancelCriterion()">Cancel</button>
+						</div>
+					</div>
+				</td>
+				<td valign="top"><div class="right-side">
+					<table cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td><script type="text/javascript">gridiron.view.showMetricGroup("speed", gridiron.Player.keys.SPEED_KEYS)</script> </td>
+							<td><script type="text/javascript">gridiron.view.showMetricGroup("player", gridiron.Player.keys.PLAYER_KEYS)</script> </td>
+						</tr><tr>
+							<td><script type="text/javascript">gridiron.view.showMetricGroup("power", gridiron.Player.keys.POWER_KEYS)</script> </td>
+							<td><script type="text/javascript">gridiron.view.showMetricGroup("team", gridiron.Player.keys.TEAM_KEYS)</script> </td>
+						</tr><tr>
+							<td><script type="text/javascript">gridiron.view.showMetricGroup("explode", gridiron.Player.keys.EXPLOSIVE_KEYS)</script> </td>
+							<td><script type="text/javascript">gridiron.view.showMetricGroup("position", gridiron.Player.keys.POSITION_KEYS)</script> </td>
+						</tr>
+					</table>
+				
+					</div>
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+	<hr/>
+	<div class="copyright">Copyright &copy; 2004 Midas Networks, Inc. &amp; Douglas Baron</div>
+	
+	<script type="text/javascript">
+		g.start();
+	</script>
+	</body>
+</html>

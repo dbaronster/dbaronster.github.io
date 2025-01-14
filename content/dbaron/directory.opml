@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="1.0">
+	<head>
+		<ownerName>Doug @Home</ownerName>
+		<ownerEmail>dougb96@home.com</ownerEmail>
+		<dateCreated>3/12/2002; 2:32:55 PM</dateCreated>
+		<dateModified>3/14/2002; 11:16:29 AM</dateModified>
+		</head>
+	<body>
+		<outline type="file" text="faq.html" size="9555" whenCreated="Tue, 12 Mar 2002 22:34:10 GMT" whenLastUploaded="Thu, 14 Mar 2002 19:16:36 GMT" url="http://www.chilehead.com/dougbaron/faq.html"/>
+		<outline type="file" text="faq.html~" size="9556" whenCreated="Tue, 12 Mar 2002 22:34:10 GMT" whenLastUploaded="Thu, 14 Mar 2002 19:16:36 GMT"/>
+		<outline type="file" text="history.html" size="22330" whenCreated="Tue, 12 Mar 2002 22:34:10 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:44 GMT"/>
+		<outline type="folder" text="images">
+			<outline type="file" text="3bg.gif" size="1196" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:44 GMT"/>
+			<outline type="file" text="3topShim.gif" size="933" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:44 GMT"/>
+			<outline type="file" text="3topSwishBG.gif" size="3621" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:44 GMT"/>
+			<outline type="file" text="back.jpg" size="773" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:44 GMT"/>
+			<outline type="file" text="bcslogo.jpg" size="7448" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:44 GMT"/>
+			<outline type="file" text="bg.jpg" size="597" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:44 GMT"/>
+			<outline type="file" text="bluedot.jpg" size="1624" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:44 GMT"/>
+			<outline type="file" text="bottomBg.gif" size="117" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="bottomLeft.gif" size="217" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="bottomLeftCorner.jpg" size="372" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="bottomRight.gif" size="257" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="bottomRightBG.jpg" size="369" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="chile.jpg" size="1159" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="ciblueBG.gif" size="531" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="ciblueCurve2.gif" size="2417" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="ciblueHeader2.gif" size="6335" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="ciblueHeaderBG001.gif" size="394" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="ciblueHeaderTitleBG.gif" size="13179" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:45 GMT"/>
+			<outline type="file" text="curveRest.jpg" size="492" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:46 GMT"/>
+			<outline type="file" text="dot11.jpg" size="5886" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:46 GMT"/>
+			<outline type="file" text="dot21.jpg" size="1325" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:46 GMT"/>
+			<outline type="file" text="dot22.jpg" size="3145" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:46 GMT"/>
+			<outline type="file" text="dotBG.jpg" size="389" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:46 GMT"/>
+			<outline type="file" text="dotwhite.gif" size="42" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:46 GMT"/>
+			<outline type="file" text="editbutton.gif" size="159" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:46 GMT"/>
+			<outline type="file" text="header1.gif" size="2386" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:46 GMT"/>
+			<outline type="file" text="header2.gif" size="1965" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:47 GMT"/>
+			<outline type="file" text="header3.gif" size="3083" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:47 GMT"/>
+			<outline type="file" text="headerBg.gif" size="83" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:38:47 GMT"/>
+			<outline type="file" text="imid.gif" size="5473" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="itop1.gif" size="4001" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="leftBg.gif" size="65" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="leftBG.jpg" size="338" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="menuBG.gif" size="94" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="menuLeft.jpg" size="5740" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="radioBadge.gif" size="1841" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="rightBg.gif" size="95" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="rightBG.jpg" size="332" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="shadow.jpg" size="1029" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="shim.gif" size="43" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:03 GMT"/>
+			<outline type="file" text="smiley.gif" size="322" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="tableBaseLeft.jpg" size="1810" whenCreated="Tue, 12 Mar 2002 22:34:52 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="tableBaseRight.jpg" size="1145" whenCreated="Tue, 12 Mar 2002 22:34:53 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="topBg.gif" size="61" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="topLeft.gif" size="183" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="topLeftCorner.jpg" size="666" whenCreated="Tue, 12 Mar 2002 22:34:53 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="topRight.gif" size="219" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="topRightCorner.jpg" size="606" whenCreated="Tue, 12 Mar 2002 22:34:53 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="userLand.gif" size="634" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="userLandLogo.gif" size="1704" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="woodsDayLink.gif" size="434" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="woodsHeader.gif" size="5933" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:04 GMT"/>
+			<outline type="file" text="woodsItemLink.gif" size="80" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:05 GMT"/>
+			<outline type="file" text="xml.gif" size="429" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:05 GMT"/>
+			<outline type="file" text="xmlCoffeeCup.gif" size="1693" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:05 GMT"/>
+			</outline>
+		<outline type="file" text="index.txt" size="96" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:05 GMT"/>
+		<outline type="file" text="intro.html" size="6405" whenCreated="Tue, 12 Mar 2002 22:34:10 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:05 GMT"/>
+		<outline type="file" text="resume.html" size="14566" whenCreated="Tue, 12 Mar 2002 22:34:10 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:05 GMT"/>
+		<outline type="file" text="rss.xml" size="1501" whenCreated="Tue, 12 Mar 2002 22:32:56 GMT" whenLastUploaded="Tue, 12 Mar 2002 22:39:05 GMT"/>
+		</body>
+	</opml>
