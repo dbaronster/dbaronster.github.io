@@ -1,36 +1,9 @@
-<?php
-include("../application.php");
-
-$DOC_TITLE = "Doug Baron Bio";
-$SEL_TAB = 2;
-include("$CFG->templatedir/header.php");
-
-$debug = "";
-
-if (!session_is_registered('counted')) {
-	db_query("UPDATE hits SET count=(count + 1) WHERE count_id=2"); 
-    session_register("counted");
-    $counted = 0;
-}
-else {
-    $counted++;
-}
-/*
-if (!isset( $_SESSION['counted'] )) {
-	mysql_query("UPDATE hits SET count=(count + 1) WHERE count_id=2"); 
-	$_SESSION['counted'] = 1;
-}
-*/
-$result = db_query("SELECT count FROM hits WHERE count_id=2");
-
-if ($result) {
-	if ($row = mysql_fetch_array($result)) {
-		$debug = $debug . $row["count"] . ' Hits';
-	}
-}
-else die ("didn't work");
-?>
-
+<html>
+<head>
+<title>Doug Baron Bio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
 <div>
 <p> I've moved around quite a bit. Landed in Houston at the beginning of High School. Then moved 
 to Wilton, CT my senior year. That year back in the North East was enough to convince me that
@@ -69,3 +42,5 @@ deeply, including JSP, servlets, and Swing. I also worked with XML, DTD, XSLT, a
 <p><em> More bio coming...</em>
 </p>
 </div>
+</body>
+</html>
