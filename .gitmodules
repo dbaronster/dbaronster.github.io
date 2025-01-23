@@ -1,0 +1,3 @@
+[submodule "gridiron-react"]
+	path = gridiron-react
+	url = https://github.com/dbaronster/gridiron-react.git
