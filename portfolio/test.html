@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Doug Baron Portfolio</title>
+<style type="text/css">
+<!--
+/** 
+ * Slideshow style rules.
+ */
+#slideshow {
+	margin:0 auto;
+	width:640px;
+	height:463px;
+	background:transparent url(img/bg_slideshow.jpg) no-repeat 0 0;
+	position:relative;
+}
+#slideshow #slidesContainer {
+  margin:0 auto;
+  width:590px;
+  height:463px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+#slideshow #slidesContainer .slide {
+  margin:0 auto;
+  width:570px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  height:463px;
+}
+
+/** 
+ * Slideshow controls style rules.
+ */
+.control {
+  display:block;
+  width:39px;
+  height:263px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:0;
+  left:0;
+  background:transparent url(img/control_left.jpg) no-repeat 0 0;
+}
+#rightControl {
+  top:0;
+  right:0;
+  background:transparent url(img/control_right.jpg) no-repeat 0 0;
+}
+
+/** 
+ * Style rules for Demo page
+ */
+* {
+  margin:0;
+  padding:0;
+  font:normal 11px Verdana, Geneva, sans-serif;
+  color:#ccc;
+}
+a {
+  color: #fff;
+  font-weight:bold;
+  text-decoration:none;
+}
+a:hover {
+  text-decoration:underline;
+}
+body {
+  background:#393737 url(img/bg_body.jpg) repeat-x top left;
+}
+#pageContainer {
+  margin:0 auto;
+  width:960px;
+}
+#pageContainer h1 {
+  display:block;
+  width:960px;
+  height:114px;
+  background:transparent url(img/bg_bottom_border.jpg) no-repeat top left;
+  text-indent: -10000px;
+}
+.slide h2, .slide p {
+  margin:15px;
+}
+.slide h2 {
+  font:italic 24px Georgia, "Times New Roman", Times, serif;
+  color:#ccc;
+  letter-spacing:-1px;
+}
+.slide img {
+  float:right;
+  margin:0 15px;
+}
+#footer {
+  height:100px;
+}
+#footer p {
+  margin:30px auto 0 auto;
+  display:block;
+  width:560px;
+  height:40px;
+}
+.table {
+	display: table;
+	padding-left: 5em;
+}
+.slide .row {
+	display: table-row;
+}
+-->
+</style>
+<!--script type="text/javascript" src="/js/jquery/1.4.2/jquery.js"></script-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 590;
+  var slides = $('.slide');
+  var numberOfSlides = slides.length;
+
+  // Remove scrollbar in JS
+  $('#slidesContainer').css('overflow', 'hidden');
+
+  // Wrap all .slides with #slideInner div
+  slides
+    .wrapAll('<div id="slideInner"></div>')
+    // Float left to display horizontally, readjust .slides width
+	.css({
+      'float' : 'left',
+      'width' : slideWidth
+    });
+
+  // Set #slideInner width equal to total width of all slides
+  $('#slideInner').css('width', slideWidth * numberOfSlides);
+
+  // Insert controls in the DOM
+  $('#slideshow')
+    .prepend('<span class="control" id="leftControl">Clicking moves left</span>')
+    .append('<span class="control" id="rightControl">Clicking moves right</span>');
+
+  // Start on slide in request query
+  var slideRequest = window.location.search.replace(/\?slide=([0-9]+)/,"$1");
+  if (slideRequest != "")
+    currentPosition = slideRequest;
+
+  // Hide left arrow control on first load
+  updatePosition(currentPosition);
+
+  // Create event listeners for .controls clicks
+  $('.control')
+    .bind('click', function(){
+    // Determine new position
+	currentPosition = ($(this).attr('id')=='rightControl') ? currentPosition+1 : currentPosition-1;
+    
+	// show it
+	updatePosition();
+    });
+
+  $('.seq')
+    .bind('click', function(){
+    // Determine new position
+	});
+
+  $('.row')
+    .bind('click', function(){
+    // Determine new position
+    currentPosition = $(this).prevAll().length;
+	updatePosition();
+	});
+
+  // manageControls: Hides and Shows controls depending on currentPosition
+  function manageControls(position){
+    // Hide left arrow if position is first slide
+	if(position==0){ $('#leftControl').hide() } else{ $('#leftControl').show() }
+	// Hide right arrow if position is last slide
+    if(position==numberOfSlides-1){ $('#rightControl').hide() } else{ $('#rightControl').show() }
+  }	
+
+  // show new position
+  function updatePosition(){
+	// Hide / show controls
+    manageControls(currentPosition);
+    // Move slideInner using margin-left
+    $('#slideInner').animate({
+      'marginLeft' : slideWidth*(-currentPosition)
+    });
+  }
+});
+</script>
+</head>
+<body>
+<div id="pageContainer">
+  <h1><a href="http://sixrevisions.com/tutorials/javascript_tutorial/create-a-slick-and-accessible-slideshow-using-jquery/">Portfolio Slideshow using jQuery</a></h1>
+  <!-- Slideshow HTML -->
+  <div id="slideshow">
+    <div id="slidesContainer">
+      <div class="slide">
+        <h2>Doug Baron&rsquo;s UI Portfolio</h2>
+        <p>In both permanent positions and contracting as "Chilehead Software", I have developed a number of advanced applications featuring quality user interfaces.</p>
+		<p>Assembled here are screenshots and brief discussion of samples both from recent and pre-internet slices of my career.</p>
+		<div class="table">
+			<div class="row"><a href="#">High Availability Configuration</a></div>
+			<div class="row"><a href="#">Specialized License Management</a></div>
+			<div class="row"><a href="#">Football Recruiting</a></div>
+			<div class="row"><a href="#">User-based Web Filtering</a></div>
+			<div class="row"><a href="#">Detailed Network Client Statistics</a></div>
+			<div class="row"><a href="#">MORE (Award-winning Macintosh application)</a></div>
+		</div>
+      </div>
+      <div class="slide">
+        <h2>High Availability Configuration</h2>
+        <p>Nearing the end of the design cycle for configuring the upgraded BlueCoat ProxyRA High Availability feature, the VPE expressed concern over existing customers understanding and managing the new constraints being placed on the interfaces being protected.</p>
+		<p>Given the expectation that most installations would require some preliminary setup, I added a set of wizard-like screens to resolve these issues clearly and simply, saving numerous error-prone round trips to the Interfaces screen, keystrokes and mouse clicks - and the support cases that surely would have ensued.</p>
+		<a href="ProxyRA-HA-slides.html" target="_blank"><img src="images/BlueCoatRA-HA1.png" alt="ProxyRA High Availability Configurationimage." width="445" height="290"/></a>
+      </div>
+      <div class="slide">
+        <h2>"Emergency" License Management</h2>
+        <p>Adding support for a new kind of license for BlueCoat ProxyRA presented a challenge: these "Emergency Preparedness" licenses had to match the base license, had specialized attributes, and could be imported for future application.</p>
+        <p>While the fully loaded feature would require considerable enterface expansion, I used <a href="http://time-tripper.com/uipatterns/Progressive_Disclosure" target="_blank">Progressive Disclosure </a> to avoid clutter in the base base. Only when license extensions are applied or accumulated does the page grow in complexity.</p>
+		<a class="seq" href="ProxyRA-License-slides.html" target="_blank"><img src="images/ProxyRA-License1.png" width="445" height="290" alt="A thumbnail image that show a simple, uncluttered license page" /></a>
+      </div>
+      <div class="slide">
+        <h2>Football Recruiting</h2>
+        <p>While on my initial Austin job search, I took on a month-long, non-commercial project to help high school football players gain
+        visibility to college recruitment. My task was to create a stand-alone CD poviding an easy interface for coaches to use to filter through the student althlete data set. 
+        With no installed base and no obvious precursor to use as a model, I came of with this relatively unstructured, simple data aquisition tool that intelligently allows three criteria to be applied.</p>
+        <p><a href="/gridiron/"><img src="images/GridironRecruits.png" width="445" height="290" alt="A thumbnail image of Gridiron Recruits page." /></a></p>
+      </div>
+      <div class="slide">
+        <h2>User-based Web Filtering</h2>
+        <p>This recent Java/Swing project added user- and group- criteria to a Web filtering system that previously had a single action associated with each site category. The old interface was already crowded and problematic, 
+        but I was able to add the needed simension to the existing model, fix some old problems, and provide a smooth transion using a tree-table component.</p>
+        <p>The "Rule Base" tree-table supports two editable columns - an Action choice and, for users/groups, the name. To accelerate data entry, I developed a custom ComboBox
+        component that automatically populates its menu and emboldens matches to any typed text - like a browser's navigation menu.</p>
+        <p><a href="images/web-filtering.png" target="_blank"><img src="images/web-filtering.png" width="445" height="290" alt="Thumbnail image of Proxy Client Web Filtering configuration panel." /></a></p>
+      </div>
+      <div class="slide">
+        <h2>ProxyClient Statistics Details</h2>
+        <p>A Java 1.4 Swing project, I created sort-able, filter-able table model framework that totally abstracted the core code needed for their presentation.</p>
+        <p><a href="images/client-details.png" target="_blank"><img src="images/client-details.png" width="445" height="290" alt="Thumbnail image of Proxy Client Web 
+        Filtering configuration panel." /></a></p>
+      </div>
+      <div class="slide">
+        <h2>MORE 3 for Macintosh</h2>
+        <p>The opportunity to work on MORE for the Macintosh motivated my original move from TX to CA. I was deeply involved at all levels of its development, 
+        enumerating and proritizing feature lists, designing menu hierarchies and dialog boxes, coding, testing, then supporting the user community.<a href="http://www.outliners.com/more30" target="_blank"><img src="http://static.userland.com/misc/outliners/images/more30/about.gif" alt="About MORE 3.0." /></a></p>
+        <p>The quality of design and attention to detail and workmanship played a large part in the product's success, earning awards from both MacWorld and MacUser magazines.</p>
+      </div>
+      <div class="slide">
+        <h2>UserLand Frontier</h2>
+        <p>Frontier was a pioneering product to which I devoted many years of productive development, but was not a vehicle for great user interface design. I include it here for completeness - with some pride as it too was an excellent, award-winning product.<a href="http://frontier.userland.com/" target="_blank"><img src="http://static.userland.com/weblogsCom/images/uservilleweblogscom/frontierHeader.jpg" width="359" height="82" alt="Thumbnail image." /></a></p>
+        <p>This is the last slide. Hit the left arrow control to go back to the other slides.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Slideshow HTML -->
+  <div id="footer">
+    <p><a href="#">Create a Slick and Accessible Slideshow Using  jQuery by Jacob Gube</a> (<a href="http://sixrevisions.com/">Six Revisions</a>)</p>
+  </div>
+</div>
+</body>
+</html>
