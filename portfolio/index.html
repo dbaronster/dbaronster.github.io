@@ -12,7 +12,7 @@
 	margin:0 auto;
 	width:640px;
 	height:463px;
-	background:transparent url(img/bg_slideshow.jpg) no-repeat 0 0;
+	background:transparent url(./img/bg_slideshow.jpg) no-repeat 0 0;
 	position:relative;
 }
 #slideshow #slidesContainer {
@@ -42,12 +42,12 @@
 #leftControl {
   top:0;
   left:0;
-  background:transparent url(img/control_left.jpg) no-repeat 0 0;
+  background:transparent url(./img/control_left.jpg) no-repeat 0 0;
 }
 #rightControl {
   top:0;
   right:0;
-  background:transparent url(img/control_right.jpg) no-repeat 0 0;
+  background:transparent url(./img/control_right.jpg) no-repeat 0 0;
 }
 
 /** 
@@ -68,7 +68,7 @@ a:hover {
   text-decoration:underline;
 }
 body {
-  background:#393737 url(img/bg_body.jpg) repeat-x top left;
+  background:#393737 url(./img/bg_body.jpg) repeat-x top left;
 }
 #pageContainer {
   margin:0 auto;
@@ -78,7 +78,7 @@ body {
   display:block;
   width:960px;
   height:114px;
-  background:transparent url(img/bg_bottom_border.jpg) no-repeat top left;
+  background:transparent url(./img/bg_bottom_border.jpg) no-repeat top left;
   text-indent: -10000px;
 }
 .slide h2, .slide p {
@@ -214,7 +214,7 @@ $(document).ready(function(){
         <h2>High Availability Configuration</h2>
         <p>Nearing the end of the design cycle for configuring the upgraded BlueCoat ProxyRA High Availability feature, the VPE expressed concern over existing customers understanding and managing the new constraints being placed on the interfaces being protected.</p>
 		<p>Given the expectation that most installations would require some preliminary setup, I added a set of wizard-like screens to resolve these issues clearly and simply, saving numerous error-prone round trips to the Interfaces screen, keystrokes and mouse clicks - and the support cases that surely would have ensued.</p>
-		<a href="ProxyRA-HA-slides.html" target="_blank"><img src="images/BlueCoatRA-HA1.png" alt="ProxyRA High Availability Configurationimage." width="445" height="290"/></a>
+		<a href="ProxyRA-HA-slides.html" target="_blank"><img src="./images/BlueCoatRA-HA1.png" alt="ProxyRA High Availability Configurationimage." width="445" height="290"/></a>
       </div>
       </section>
       <section id="license-mgmt">
@@ -222,7 +222,7 @@ $(document).ready(function(){
         <h2>"Emergency" License Management</h2>
         <p>Adding support for a new kind of license for BlueCoat ProxyRA presented a challenge: these "Emergency Preparedness" licenses had to match the base license, had specialized attributes, and could be imported for future application.</p>
         <p>While the fully loaded feature would require considerable enterface expansion, I used <a href="http://time-tripper.com/uipatterns/Progressive_Disclosure" target="_blank">Progressive Disclosure </a> to avoid clutter in the base base. Only when license extensions are applied or accumulated does the page grow in complexity.</p>
-		<a class="seq" href="ProxyRA-License-slides.html" target="_blank"><img src="images/ProxyRA-License1.png" width="445" height="290" alt="A thumbnail image that show a simple, uncluttered license page" /></a>
+		<a class="seq" href="ProxyRA-License-slides.html" target="_blank"><img src="./images/ProxyRA-License1.png" width="445" height="290" alt="A thumbnail image that show a simple, uncluttered license page" /></a>
       </div>
       </secion>
       <div class="slide">
@@ -238,12 +238,12 @@ $(document).ready(function(){
         but I was able to add the needed simension to the existing model, fix some old problems, and provide a smooth transion using a tree-table component.</p>
         <p>The "Rule Base" tree-table supports two editable columns - an Action choice and, for users/groups, the name. To accelerate data entry, I developed a custom ComboBox
         component that automatically populates its menu and emboldens matches to any typed text - like a browser's navigation menu.</p>
-        <p><a href="images/web-filtering.png" target="_blank"><img src="images/web-filtering.png" width="445" height="290" alt="Thumbnail image of Proxy Client Web Filtering configuration panel." /></a></p>
+        <p><a href="images/web-filtering.png" target="_blank"><img src="./images/web-filtering.png" width="445" height="290" alt="Thumbnail image of Proxy Client Web Filtering configuration panel." /></a></p>
       </div>
       <div class="slide">
         <h2>ProxyClient Statistics Details</h2>
         <p>A Java 1.4 Swing project, I created sort-able, filter-able table model framework that totally abstracted the core code needed for their presentation.</p>
-        <p><a href="images/client-details.png" target="_blank"><img src="images/client-details.png" width="445" height="290" alt="Thumbnail image of Proxy Client Web 
+        <p><a href="images/client-details.png" target="_blank"><img src="./images/client-details.png" width="445" height="290" alt="Thumbnail image of Proxy Client Web 
         Filtering configuration panel." /></a></p>
       </div>
       <div class="slide">
