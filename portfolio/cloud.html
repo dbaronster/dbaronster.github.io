@@ -71,14 +71,24 @@
     </div>
 	<div class="row">
 	  <div class="col-12 col-lg-8 p-2">
-	    <a href="#aws-migration">
+	    <a href="#aws-module2">
 	      <div class="card p-3">
 	        <h3 class="mt-2">Automated user migration and management of AWS Identity and Access Management (IAM) resources</h3>
-	        <p class="card-text">
-	        </p>
+	        <p class="card-text"></p>
 	      </div>
-	  </a>
+	    </a>
 	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-12 col-lg-8 p-2">
+	    <a href="#aws-module3">
+	      <div class="card p-3">
+	        <h3 class="mt-2">Migrating a workload running in a Corporate DataCenter to AWS.</h3>
+	        <p class="card-text"></p>
+	      </div>
+	    </a>
+	  </div>
+	</div>
 
   </section>
 
@@ -88,28 +98,59 @@
     © Doug Baron  2025 
   </p>
   <hr class="py-2 container-fluid">
-  <section id="aws-migration">
+  <section id="aws-module2">
     <div class="container py-4">
       <div class="row g-5">
 
         <div class="col-12 col-lg-8">
           <h2 class="text-primary-hero mt-4">Automated user migration and management of AWS Identity and Access Management (IAM) resource</h2>
-		  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 2_THUMBNAIL.png" alt="Solution Architecture." width="640" height="360"/>
-		  <p>In this project based on a real-world scenario, I acted as Cloud Specialist with the mission to migrate users in an automated way and manage AWS IAM (Identity and Access Management) resources.</p>
+  	  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 2_THUMBNAIL.png" alt="Solution Architecture." width="640" height="360"/>
+  	  <p>In this project based on a real-world scenario, I acted as Cloud Specialist with the mission to migrate users in an automated way and manage AWS IAM (Identity and Access Management) resources.</p>
 
-		  <p>There were 100 users that needed to be migrated and have MFA (Multi-fa	ctor authentication) enabled on their accounts, as this is a security best practice.</p>
+  	  <p>There were 100 users that needed to be migrated and have MFA (Multi-fa	ctor authentication) enabled on their accounts, as this is a security best practice.</p>
 
-		  <p>To avoid repetitive and error prone manual tasks in the AWS console, I looked for the best way to automate the processes.</p>
+  	  <p>To avoid repetitive and error prone manual tasks in the AWS console, I looked for the best way to automate the processes.</p>
 
-		  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 2_ARCHITECTURE.png" alt="Solution Architecture." width="640" height="360"/>
-		  
-		  <p>I cleaned up a .csv file containing an exported list of users, mapping positions to various groups that I had created in IAM.</p>
-		  <p>I then ran a shell script using the AWS CLI to automatically create those users and add them to their respective groups.</p>
-		  <p>Users were assigned fixed passwords that they would have to change on initial login.</p>
-		  <p>All groups were configured to require MFA to gain access to their services.</p>
-		  
-		  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 2_IAM_USERS.png" alt="Solution Architecture." width="640" height="360"/>
-		  <p>The script worked beautifully, creating the hundred users very quickly and easily.</p>
+  	  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 2_ARCHITECTURE.png" alt="Solution Architecture." width="640" height="360"/>
+  	  
+  	  <p>I cleaned up a .csv file containing an exported list of users, mapping positions to various groups that I had created in IAM.</p>
+  	  <p>I then ran a shell script using the AWS CLI to automatically create those users and add them to their respective groups.</p>
+  	  <p>Users were assigned fixed passwords that they would have to change on initial login.</p>
+  	  <p>All groups were configured to require MFA to gain access to their services.</p>
+  	  
+  	  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 2_IAM_USERS.png" alt="Solution Architecture." width="640" height="360"/>
+  	  <p>The script worked beautifully, creating the hundred users very quickly and easily.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="py-2 container-fluid">
+  <section id="aws-module3">
+    <div class="container py-4">
+      <div class="row g-5">
+
+        <div class="col-12 col-lg-8">
+          <h2 class="text-primary-hero mt-4">Migrating a workload running in a Corporate DataCenter to AWS</h2>
+  	  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 3_THUMBNAIL.png" alt="Solution Architecture." width="640" height="360"/>
+  	  <p>In another project based in a real-world scenario, I acted as the Cloud Specialist responsible for migrating a workload running in a Corporate DataCenter to AWS.</p>
+
+	  <p>The application and database were migrated to AWS using the Lift & Shift (rehost) model, moving both application and database data.</p> 
+
+	  <p>I followed some migration steps: Planning (sizing, prerequisites, resource naming), Execution (resource provisioning, best practices), Go-live (validation test - 
+		 Dry-run, final migration - Cutover) and Post Go-live (ensure the operation of the application and user access).</p>
+
+	<p>  … [Why don't you write down your experience during this project? Remember to highlight all details and technologies used to successfully complete it]
+  </p>
+
+
+  	  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 3_ARCHITECTURE.png" alt="Solution Architecture." width="640" height="360"/>
+  	  
+  	  <p>I have to admit, this lift and shift included a Django web app served by a python app, neither of which I could write or even debug myself. </p>
+	  <p>I guess that's as it should be - migration to the cloud shouldn't require expertise on the applications or content!</p>
+  	  <p>Similarly, the database dump, imported to the AWS RDS, was strictly black box for this exercise, validting the table structure and population only.</p>
+  	  
+  	  <img src="./images/PORTFOLIO PROJECTS_AWS - MODULE 3_WikiArticles.png" alt="Wiki Articles." width="640" height="360"/>
+  	  <p>The script worked beautifully, creating the hundred users very quickly and easily.</p>
       </div>
     </div>
   </section>
